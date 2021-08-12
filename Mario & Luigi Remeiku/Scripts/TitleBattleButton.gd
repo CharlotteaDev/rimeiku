@@ -8,4 +8,4 @@ func _on_Button_pressed():
 	animationPlayerRect.play("Fade out")
 	animationPlayer.play("FadeOut")
 	yield(get_tree().create_timer(delayTimer), "timeout")
-	get_tree().change_scene("res://Scenes/Main.tscn")
+	get_tree().change_scene("./Scenes/Main.tscn")
