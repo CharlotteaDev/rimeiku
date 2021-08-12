@@ -20,10 +20,10 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.3, 0.5, 0.7, 1, 1.3, 1.5, 1.7, 2 ),
-"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"times": PoolRealArray(  ),
+"transitions": PoolRealArray(  ),
 "update": 0,
-"values": [ Vector2( 50, 3 ), Vector2( 50, 1 ), Vector2( 50, 0 ), Vector2( 50, 1 ), Vector2( 50, 3 ), Vector2( 50, -1 ), Vector2( 50, -2 ), Vector2( 50, -1 ), Vector2( 50, 3 ) ]
+"values": [  ]
 }
 
 [sub_resource type="DynamicFont" id=2]
@@ -116,7 +116,7 @@ bus = "TitleBus"
 
 [node name="Logo" type="Sprite" parent="ColorRect"]
 show_behind_parent = true
-position = Vector2( 65.5388, 12.1748 )
+position = Vector2( 50, 38 )
 scale = Vector2( 0.7, 0.7 )
 texture = ExtResource( 3 )
 centered = false
@@ -131,7 +131,10 @@ margin_left = 322.803
 margin_top = 345.71
 margin_right = 665.803
 margin_bottom = 449.71
+size_flags_horizontal = 15
+size_flags_vertical = 15
 custom_fonts/font = SubResource( 2 )
+toggle_mode = true
 button_mask = 7
 keep_pressed_outside = true
 text = "Battle!"
@@ -148,13 +151,55 @@ __meta__ = {
 [node name="AnimationPlayer" type="AnimationPlayer" parent="ColorRect/Button"]
 anims/FadeOut = SubResource( 3 )
 
+[node name="Button3" type="Button" parent="ColorRect/Button"]
+show_behind_parent = true
+margin_top = 2.96967
+margin_right = 343.0
+margin_bottom = 106.97
+mouse_filter = 2
+custom_fonts/font = SubResource( 2 )
+disabled = true
+button_mask = 7
+keep_pressed_outside = true
+text = "Battle!"
+icon = ExtResource( 6 )
+flat = true
+clip_text = true
+align = 0
+expand_icon = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="Button2" type="Button" parent="ColorRect"]
 show_behind_parent = true
 margin_left = 287.874
 margin_top = 430.363
 margin_right = 682.874
 margin_bottom = 534.363
+mouse_filter = 2
 custom_fonts/font = SubResource( 2 )
+button_mask = 0
+keep_pressed_outside = true
+text = "Adventure!"
+icon = ExtResource( 5 )
+flat = true
+clip_text = true
+align = 0
+expand_icon = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button3" type="Button" parent="ColorRect/Button2"]
+show_behind_parent = true
+margin_left = -0.471436
+margin_top = 3.06174
+margin_right = 394.529
+margin_bottom = 107.062
+mouse_filter = 2
+custom_fonts/font = SubResource( 2 )
+disabled = true
 button_mask = 0
 keep_pressed_outside = true
 text = "Adventure!"
@@ -181,8 +226,4 @@ centered = false
 autoplay = "Fade in"
 "anims/Fade in" = SubResource( 7 )
 "anims/Fade out" = SubResource( 8 )
-
-[node name="Tween" type="Tween" parent="ColorRect/AnimationPlayerRect"]
-repeat = true
-playback/repeat = true
 [connection signal="pressed" from="ColorRect/Button" to="ColorRect/Button" method="_on_Button_pressed"]

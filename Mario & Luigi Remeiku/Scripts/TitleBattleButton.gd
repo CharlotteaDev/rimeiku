@@ -5,6 +5,7 @@ onready var animationPlayer : AnimationPlayer = get_node("AnimationPlayer")
 var delayTimer = 1.5
 
 func _on_Button_pressed():
+	set_disabled(true)
 	animationPlayerRect.play("Fade out")
 	animationPlayer.play("FadeOut")
 	yield(get_tree().create_timer(delayTimer), "timeout")
