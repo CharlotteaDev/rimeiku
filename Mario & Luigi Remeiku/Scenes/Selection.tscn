@@ -111,7 +111,6 @@ centered = false
 
 [node name="Theme" type="AudioStreamPlayer" parent="ColorRect"]
 stream = ExtResource( 2 )
-autoplay = true
 bus = "TitleBus"
 
 [node name="Logo" type="Sprite" parent="ColorRect"]
@@ -217,7 +216,6 @@ show_behind_parent = true
 position = Vector2( 904.317, 572.417 )
 scale = Vector2( 1.56123, 1.56123 )
 frames = SubResource( 6 )
-frame = 1
 speed_scale = 0.2
 playing = true
 centered = false
