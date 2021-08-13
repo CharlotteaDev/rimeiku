@@ -15,7 +15,7 @@ _global_script_class_icons={
 
 [application]
 
-config/name="Mario & Luigi Rimeiku"
+config/name="Mario & Luigi Rimeiku Github"
 run/main_scene="res://Scenes/Selection.tscn"
 boot_splash/image="res://Misc/MLRLogo.png"
 boot_splash/fullsize=false

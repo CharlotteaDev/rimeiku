@@ -150,26 +150,6 @@ __meta__ = {
 [node name="AnimationPlayer" type="AnimationPlayer" parent="ColorRect/Button"]
 anims/FadeOut = SubResource( 3 )
 
-[node name="Button3" type="Button" parent="ColorRect/Button"]
-show_behind_parent = true
-margin_top = 2.96967
-margin_right = 343.0
-margin_bottom = 106.97
-mouse_filter = 2
-custom_fonts/font = SubResource( 2 )
-disabled = true
-button_mask = 7
-keep_pressed_outside = true
-text = "Battle!"
-icon = ExtResource( 6 )
-flat = true
-clip_text = true
-align = 0
-expand_icon = true
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
 [node name="Button2" type="Button" parent="ColorRect"]
 show_behind_parent = true
 margin_left = 287.874
@@ -190,32 +170,12 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Button3" type="Button" parent="ColorRect/Button2"]
-show_behind_parent = true
-margin_left = -0.471436
-margin_top = 3.06174
-margin_right = 394.529
-margin_bottom = 107.062
-mouse_filter = 2
-custom_fonts/font = SubResource( 2 )
-disabled = true
-button_mask = 0
-keep_pressed_outside = true
-text = "Adventure!"
-icon = ExtResource( 5 )
-flat = true
-clip_text = true
-align = 0
-expand_icon = true
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
 [node name="AttackDemo" type="AnimatedSprite" parent="ColorRect"]
 show_behind_parent = true
 position = Vector2( 904.317, 572.417 )
 scale = Vector2( 1.56123, 1.56123 )
 frames = SubResource( 6 )
+frame = 1
 speed_scale = 0.2
 playing = true
 centered = false
