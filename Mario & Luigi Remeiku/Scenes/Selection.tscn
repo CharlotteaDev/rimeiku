@@ -129,6 +129,7 @@ centered = false
 
 [node name="Theme" type="AudioStreamPlayer" parent="ColorRect"]
 stream = ExtResource( 2 )
+autoplay = true
 bus = "TitleBus"
 
 [node name="Logo" type="Sprite" parent="ColorRect"]
