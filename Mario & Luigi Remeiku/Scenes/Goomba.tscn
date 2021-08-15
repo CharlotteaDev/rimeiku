@@ -467,7 +467,7 @@ scale = Vector2( 2, 2 )
 [node name="Goomba" type="AnimatedSprite" parent="KinematicBody2D"]
 frames = SubResource( 113 )
 animation = "idle"
-frame = 81
+frame = 95
 speed_scale = 3.0
 playing = true
 
