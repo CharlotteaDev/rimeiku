@@ -1369,9 +1369,10 @@ extents = Vector2( 16.307, 20.8744 )
 scale = Vector2( 2, 2 )
 
 [node name="Mario" type="AnimatedSprite" parent="KinematicBody2D2"]
+position = Vector2( 25, 0 )
 frames = SubResource( 428 )
-animation = "idle"
-frame = 16
+animation = "yourTurn"
+frame = 36
 speed_scale = 3.0
 playing = true
 

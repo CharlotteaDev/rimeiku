@@ -15,14 +15,12 @@
 position = Vector2( 293.004, 410.694 )
 
 [node name="Mario" parent="." instance=ExtResource( 2 )]
-show_behind_parent = true
 position = Vector2( 318.419, 319.195 )
 
 [node name="Goomba" parent="." instance=ExtResource( 3 )]
 position = Vector2( 747.426, 365.316 )
 
 [node name="Background" type="Sprite" parent="."]
-visible = false
 show_behind_parent = true
 position = Vector2( 587.765, -58.4097 )
 scale = Vector2( 2, 2 )
