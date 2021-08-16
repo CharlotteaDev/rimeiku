@@ -15,7 +15,7 @@ scale = Vector2( 2, 2 )
 texture = ExtResource( 1 )
 
 [node name="Heart" type="Sprite" parent="Main"]
-position = Vector2( -24, -13 )
+position = Vector2( -24, -14 )
 texture = ExtResource( 2 )
 script = ExtResource( 6 )
 

@@ -21,7 +21,6 @@ boot_splash/image="res://Misc/MLRLogo.png"
 boot_splash/fullsize=false
 boot_splash/bg_color=Color( 0.0745098, 0, 0.309804, 1 )
 config/icon="res://Misc/RimeikuIcon.png"
-config/windows_native_icon="res://Misc/RemeikuIco.ico"
 
 [audio]
 
