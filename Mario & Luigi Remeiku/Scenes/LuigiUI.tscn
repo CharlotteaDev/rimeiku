@@ -1,10 +1,8 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Misc/Battle/LuigiUI.png" type="Texture" id=1]
 [ext_resource path="res://Misc/Battle/HeartUI.png" type="Texture" id=2]
-[ext_resource path="res://Misc/Battle/9.png" type="Texture" id=3]
 [ext_resource path="res://Misc/Battle/BrosUI.png" type="Texture" id=4]
-[ext_resource path="res://Misc/Battle/9Rinji.png" type="Texture" id=5]
 [ext_resource path="res://Scripts/HPScript.gd" type="Script" id=6]
 [ext_resource path="res://Scripts/BPScript.gd" type="Script" id=7]
 
@@ -19,33 +17,9 @@ position = Vector2( -24, -14 )
 texture = ExtResource( 2 )
 script = ExtResource( 6 )
 
-[node name="XXOH" type="Sprite" parent="Main"]
-position = Vector2( 16, -14 )
-texture = ExtResource( 3 )
-
-[node name="XOXH" type="Sprite" parent="Main"]
-position = Vector2( 5, -14 )
-texture = ExtResource( 3 )
-
-[node name="OXXH" type="Sprite" parent="Main"]
-position = Vector2( -6, -14 )
-texture = ExtResource( 3 )
-
 [node name="Special" type="Sprite" parent="Main"]
 position = Vector2( -19.5, 3 )
 texture = ExtResource( 4 )
 script = ExtResource( 7 )
-
-[node name="XXOS" type="Sprite" parent="Main"]
-position = Vector2( 21, 4 )
-texture = ExtResource( 5 )
-
-[node name="XOXS" type="Sprite" parent="Main"]
-position = Vector2( 10, 4 )
-texture = ExtResource( 5 )
-
-[node name="OXXS" type="Sprite" parent="Main"]
-position = Vector2( -1, 4 )
-texture = ExtResource( 5 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Main"]

@@ -232,42 +232,27 @@ script = ExtResource( 7 )
 position = Vector2( -24, -14 )
 texture = ExtResource( 2 )
 script = ExtResource( 6 )
+xxoHP_path = NodePath("../001H")
+xoxHP_path = NodePath("../010H")
+oxxHP_path = NodePath("../100H")
 
-[node name="XXOH" type="AnimatedSprite" parent="Main"]
+[node name="001H" type="AnimatedSprite" parent="Main"]
 position = Vector2( 16, -14 )
 frames = SubResource( 12 )
 animation = "N"
 frame = 9
 
-[node name="XOXH" type="AnimatedSprite" parent="Main"]
+[node name="010H" type="AnimatedSprite" parent="Main"]
 position = Vector2( 5, -14 )
 frames = SubResource( 12 )
 animation = "N"
 frame = 9
 
-[node name="OXXH" type="AnimatedSprite" parent="Main"]
+[node name="100H" type="AnimatedSprite" parent="Main"]
 position = Vector2( -6, -14 )
 frames = SubResource( 12 )
 animation = "N"
 frame = 9
-
-[node name="XXOHK" type="AnimatedSprite" parent="Main"]
-visible = false
-position = Vector2( 16, -14 )
-frames = SubResource( 12 )
-animation = "K"
-
-[node name="XOXHK" type="AnimatedSprite" parent="Main"]
-visible = false
-position = Vector2( 5, -14 )
-frames = SubResource( 12 )
-animation = "K"
-
-[node name="OXXHK" type="AnimatedSprite" parent="Main"]
-visible = false
-position = Vector2( -6, -14 )
-frames = SubResource( 12 )
-animation = "K"
 
 [node name="XXOS" type="AnimatedSprite" parent="Main"]
 position = Vector2( 21, 4 )
@@ -286,21 +271,3 @@ position = Vector2( -1, 4 )
 frames = SubResource( 23 )
 animation = "R"
 frame = 9
-
-[node name="XXOSH" type="AnimatedSprite" parent="Main"]
-visible = false
-position = Vector2( 21, 4 )
-frames = SubResource( 23 )
-animation = "H"
-
-[node name="XOXSH" type="AnimatedSprite" parent="Main"]
-visible = false
-position = Vector2( 10, 4 )
-frames = SubResource( 23 )
-animation = "H"
-
-[node name="OXXSH" type="AnimatedSprite" parent="Main"]
-visible = false
-position = Vector2( -1, 4 )
-frames = SubResource( 23 )
-animation = "H"
