@@ -5,8 +5,8 @@
 [ext_resource path="res://Misc/Battle/9.png" type="Texture" id=3]
 [ext_resource path="res://Misc/Battle/BrosUI.png" type="Texture" id=4]
 [ext_resource path="res://Misc/Battle/9Rinji.png" type="Texture" id=5]
-[ext_resource path="res://Scenes/HPScript.gd" type="Script" id=6]
-[ext_resource path="res://Scenes/BPScript.gd" type="Script" id=7]
+[ext_resource path="res://Scripts/HPScript.gd" type="Script" id=6]
+[ext_resource path="res://Scripts/BPScript.gd" type="Script" id=7]
 
 [sub_resource type="Animation" id=1]
 resource_name = "load"
@@ -36,7 +36,7 @@ autoplay = "load"
 anims/load = SubResource( 1 )
 
 [node name="Special" type="Sprite" parent="Main"]
-position = Vector2( -20, 3.5 )
+position = Vector2( -20, 3 )
 texture = ExtResource( 4 )
 script = ExtResource( 7 )
 

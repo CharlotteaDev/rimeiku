@@ -1372,7 +1372,7 @@ scale = Vector2( 2, 2 )
 position = Vector2( 25, 0 )
 frames = SubResource( 428 )
 animation = "yourTurn"
-frame = 36
+frame = 70
 speed_scale = 3.0
 playing = true
 
