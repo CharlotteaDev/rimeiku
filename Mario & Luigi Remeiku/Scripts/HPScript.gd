@@ -11,12 +11,11 @@ onready var xoxHP = get_node(xoxHP_path)
 onready var oxxHP = get_node(oxxHP_path)
 
 func _ready(): 
-#
-#	xxoHP.set_animation("K")
-#	xoxHP.set_animation("K")
-#	oxxHP.set_animation("K")
-#
-#	xxoHP.set_frame(5)
-#	xoxHP.set_frame(9)
-#	oxxHP.set_frame(1)
-	pass
+
+	xxoHP.set_animation("K")
+	xoxHP.set_animation("K")
+	oxxHP.set_animation("K")
+
+	xxoHP.set_frame(5)
+	xoxHP.set_frame(9)
+	oxxHP.set_frame(1)
