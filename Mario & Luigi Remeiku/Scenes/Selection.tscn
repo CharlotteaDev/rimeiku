@@ -68,17 +68,17 @@ region_rect = Rect2( 0, 0, 487, 149 )
 texture = ExtResource( 1 )
 region_rect = Rect2( 0, 0, 487, 149 )
 
-[sub_resource type="AtlasTexture" id=16]
+[sub_resource type="AtlasTexture" id=11]
 atlas = ExtResource( 4 )
 region = Rect2( 0, 0, 128, 16 )
 
-[sub_resource type="AtlasTexture" id=17]
+[sub_resource type="AtlasTexture" id=12]
 atlas = ExtResource( 4 )
 region = Rect2( 128, 0, 128, 16 )
 
 [sub_resource type="SpriteFrames" id=13]
 animations = [ {
-"frames": [ SubResource( 16 ), SubResource( 17 ) ],
+"frames": [ SubResource( 11 ), SubResource( 12 ) ],
 "loop": true,
 "name": "default",
 "speed": 5.0
@@ -137,7 +137,7 @@ scale = Vector2( 0.65, 0.65 )
 texture = ExtResource( 3 )
 centered = false
 
-[node name="Button" type="Button" parent="ColorRect"]
+[node name="Battle" type="Button" parent="ColorRect"]
 show_behind_parent = true
 margin_left = 322.803
 margin_top = 345.71
@@ -154,10 +154,10 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="ColorRect/Button"]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="ColorRect/Battle"]
 anims/FadeOut = SubResource( 6 )
 
-[node name="Button2" type="Button" parent="ColorRect"]
+[node name="Adventure" type="Button" parent="ColorRect"]
 show_behind_parent = true
 margin_left = 322.803
 margin_top = 437.161
@@ -189,4 +189,4 @@ centered = false
 autoplay = "Fade in"
 "anims/Fade in" = SubResource( 14 )
 "anims/Fade out" = SubResource( 15 )
-[connection signal="pressed" from="ColorRect/Button" to="ColorRect/Button" method="_on_Button_pressed"]
+[connection signal="pressed" from="ColorRect/Battle" to="ColorRect/Battle" method="_on_Button_pressed"]
