@@ -42,5 +42,5 @@ position = Vector2( 368.554, 219.657 )
 position = Vector2( 162, 606 )
 
 [node name="MarioUI" parent="." instance=ExtResource( 8 )]
-show_behind_parent = true
 position = Vector2( 292, 606 )
+scale = Vector2( 2, 2 )
