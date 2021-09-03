@@ -1,9 +1,9 @@
 extends Sprite
 
 #HP numbers nodes
-onready var xxoHP = get_node("./001H")
-onready var xoxHP = get_node("./010H")
-onready var oxxHP = get_node("./100H")
+onready var xxoHP = get_node("../001H")
+onready var xoxHP = get_node("../010H")
+onready var oxxHP = get_node("../100H")
 
 #HP numbers values/current frame
 onready var x1 = xxoHP.frame
