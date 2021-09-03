@@ -6,11 +6,13 @@ onready var xoxHP = get_node("./010H")
 onready var oxxHP = get_node("./100H")
 
 #HP numbers values/current frame
-onready var x1 = xxoHP.frame
-onready var x2 = xoxHP.frame
-onready var x3 = oxxHP.frame
+onready var x1hp = xxoHP.frame
+onready var x2hp = xoxHP.frame
+onready var x3hp = oxxHP.frame
 
 var totHP = int()
+
+var delayTimer = 1.3
 
 func _ready():
 
@@ -22,12 +24,10 @@ func _ready():
 	xoxHP.set_frame(1)
 	oxxHP.set_frame(0)
 	
-# warning-ignore:unused_variable
-# warning-ignore:unused_variable
-	var totHP = int(str(x3) + str(x2) + str(x1))
+	var totHP = int(str(x3hp) + str(x2hp) + str(x1hp))
 	
 	if Input.is_action_pressed("A"):
-		xxoHP.set_frame(x1 + 5)
+		xxoHP.set_frame(x1hp + 1)
 
 	#For making numbers disappear when they've reached 0, but not removing them when they're at 10 for example.
 	if oxxHP.frame == 0:
@@ -48,7 +48,9 @@ func _on_001H_frame_changed():
 		xxoHP.visible = false
 
 	#For me to see the value for stuff is working
-	print(totHP)
-	print(x1)
-	print(x2)
-	print(x3)
+	yield(get_tree().create_timer(delayTimer), "timeout")
+
+	print(totHP, "HP")
+	print(x1hp, "HP1")
+	print(x2hp, "HP2")
+	print(x3hp, "HP3")

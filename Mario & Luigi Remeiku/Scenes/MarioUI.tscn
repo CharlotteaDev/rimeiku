@@ -267,4 +267,5 @@ position = Vector2( 18, 0 )
 frames = SubResource( 43 )
 animation = "R"
 frame = 9
-[connection signal="frame_changed" from="Main/Heart" to="Main/Heart" method="_on_Heart_frame_changed"]
+[connection signal="frame_changed" from="Main/Heart/001H" to="Main/Heart" method="_on_001H_frame_changed"]
+[connection signal="frame_changed" from="Main/Special/001S" to="Main/Special" method="_on_001S_frame_changed"]
