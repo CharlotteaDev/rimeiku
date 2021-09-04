@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/PluUI.png-5e3115b09b59ace9983bd11bfec46dbf.stex"
+path="res://.import/DebugMain.png-dbfb1fb2020970c5a04cede77bede456.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Misc/Battle/PluUI.png"
-dest_files=[ "res://.import/PluUI.png-5e3115b09b59ace9983bd11bfec46dbf.stex" ]
+source_file="res://Misc/Battle/Debug/DebugMain.png"
+dest_files=[ "res://.import/DebugMain.png-dbfb1fb2020970c5a04cede77bede456.stex" ]
 
 [params]
 
