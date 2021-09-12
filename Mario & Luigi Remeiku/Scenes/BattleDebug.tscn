@@ -1,0 +1,84 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://Misc/Battle/Debug/DebugMain.png" type="Texture" id=1]
+[ext_resource path="res://Misc/Battle/HeartUI.png" type="Texture" id=2]
+[ext_resource path="res://Misc/Battle/NumR.png" type="Texture" id=3]
+[ext_resource path="res://Misc/Battle/NumN.png" type="Texture" id=4]
+[ext_resource path="res://Misc/Battle/BrosUI.png" type="Texture" id=5]
+[ext_resource path="res://Misc/Battle/Debug/Cursor.png" type="Texture" id=6]
+[ext_resource path="res://Scripts/DebugCursor.gd" type="Script" id=7]
+[ext_resource path="res://Scenes/DebugMainControl.gd" type="Script" id=8]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Main" type="Sprite" parent="."]
+scale = Vector2( 2, 2 )
+texture = ExtResource( 1 )
+offset = Vector2( -120, 150 )
+script = ExtResource( 8 )
+
+[node name="Heart" type="Sprite" parent="Main"]
+position = Vector2( -210, 75 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 2 )
+
+[node name="1" type="Sprite" parent="Main/Heart"]
+position = Vector2( 20, 0 )
+texture = ExtResource( 4 )
+hframes = 10
+frame = 1
+
+[node name="5" type="Sprite" parent="Main/Heart"]
+position = Vector2( 35, 0 )
+texture = ExtResource( 4 )
+hframes = 10
+frame = 5
+
+[node name="10(A)" type="Sprite" parent="Main/Heart"]
+position = Vector2( 50, 0 )
+texture = ExtResource( 4 )
+hframes = 10
+frame = 1
+region_rect = Rect2( 1, 1, 13, 14 )
+
+[node name="10(B)" type="Sprite" parent="Main/Heart/10(A)"]
+position = Vector2( 9, 0 )
+texture = ExtResource( 4 )
+hframes = 10
+region_rect = Rect2( 1, 1, 13, 14 )
+
+[node name="Special" type="Sprite" parent="Main/Heart"]
+position = Vector2( 0, 30 )
+texture = ExtResource( 5 )
+
+[node name="1" type="Sprite" parent="Main/Heart/Special"]
+position = Vector2( 20, 0 )
+texture = ExtResource( 3 )
+hframes = 10
+frame = 1
+
+[node name="5" type="Sprite" parent="Main/Heart/Special"]
+position = Vector2( 35, 0 )
+texture = ExtResource( 3 )
+hframes = 10
+frame = 5
+
+[node name="10(A)" type="Sprite" parent="Main/Heart/Special"]
+position = Vector2( 50, 0 )
+texture = ExtResource( 3 )
+hframes = 10
+frame = 1
+region_rect = Rect2( 1, 1, 13, 14 )
+
+[node name="10(B)" type="Sprite" parent="Main/Heart/Special/10(A)"]
+position = Vector2( 9, 0 )
+texture = ExtResource( 3 )
+hframes = 10
+region_rect = Rect2( 1, 1, 13, 14 )
+
+[node name="Cursor" type="Sprite" parent="Main"]
+position = Vector2( -170, 48 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 6 )
+hframes = 2
+script = ExtResource( 7 )

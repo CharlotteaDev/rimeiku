@@ -137,7 +137,7 @@ scale = Vector2( 0.65, 0.65 )
 texture = ExtResource( 3 )
 centered = false
 
-[node name="Battle" type="Button" parent="ColorRect"]
+[node name="Button" type="Button" parent="ColorRect"]
 show_behind_parent = true
 margin_left = 322.803
 margin_top = 345.71
@@ -154,10 +154,10 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="ColorRect/Battle"]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="ColorRect/Button"]
 anims/FadeOut = SubResource( 6 )
 
-[node name="Adventure" type="Button" parent="ColorRect"]
+[node name="Button2" type="Button" parent="ColorRect"]
 show_behind_parent = true
 margin_left = 322.803
 margin_top = 437.161
@@ -181,6 +181,7 @@ show_behind_parent = true
 position = Vector2( 904.317, 572.417 )
 scale = Vector2( 1.56123, 1.56123 )
 frames = SubResource( 13 )
+frame = 1
 speed_scale = 0.2
 playing = true
 centered = false
@@ -189,4 +190,4 @@ centered = false
 autoplay = "Fade in"
 "anims/Fade in" = SubResource( 14 )
 "anims/Fade out" = SubResource( 15 )
-[connection signal="pressed" from="ColorRect/Battle" to="ColorRect/Battle" method="_on_Button_pressed"]
+[connection signal="pressed" from="ColorRect/Button" to="ColorRect/Button" method="_on_Button_pressed"]
