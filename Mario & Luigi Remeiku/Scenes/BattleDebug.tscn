@@ -7,7 +7,8 @@
 [ext_resource path="res://Misc/Battle/BrosUI.png" type="Texture" id=5]
 [ext_resource path="res://Misc/Battle/Debug/Cursor.png" type="Texture" id=6]
 [ext_resource path="res://Scripts/DebugCursor.gd" type="Script" id=7]
-[ext_resource path="res://Scenes/DebugMainControl.gd" type="Script" id=8]
+[ext_resource path="res://Scripts/DebugMainControl.gd" type="Script" id=8]
+
 
 [node name="Node2D" type="Node2D"]
 

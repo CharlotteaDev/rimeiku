@@ -5,18 +5,18 @@ onready var posY = 1
 
 func _input(event):
 
+	if posX == 4:
+		posX = posX-1
 	if event.is_action_pressed("right"):
 		posX = posX+1
 		print("x",posX)
 		frame = 2
-	if posX == 3:
-		posX = posX-1
 
+	if posX == 0:
+		posX = posX+1
 	if event.is_action_pressed("left"):
 		posX = posX-1
 		print("x",posX)
-	if posX == -1:
-		posX = posX+1
 
 	if event.is_action_pressed("up"):
 		posY = posY-1

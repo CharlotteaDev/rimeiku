@@ -1,16 +1,11 @@
-extends KinematicBody2D
+extends AnimationPlayer
 
+onready var ManimationPlayer : AnimationPlayer = get_node("../AnimationPlayer")
+onready var delayTimer = 1.2
 
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
-
-
-# Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	yield(get_tree().create_timer(delayTimer), "timeout")
 
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+func _input(event):
+	if event.is_action_pressed("A"):
+		ManimationPlayer.play("jump")

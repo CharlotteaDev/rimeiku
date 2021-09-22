@@ -15,9 +15,6 @@
 [node name="Luigi" parent="." instance=ExtResource( 1 )]
 position = Vector2( 293.004, 410.694 )
 
-[node name="Mario" parent="." instance=ExtResource( 2 )]
-position = Vector2( 318.419, 319.195 )
-
 [node name="Goomba" parent="." instance=ExtResource( 3 )]
 position = Vector2( 747.426, 365.316 )
 
@@ -37,7 +34,11 @@ stream = ExtResource( 5 )
 
 [node name="Command Blocks" parent="." instance=ExtResource( 6 )]
 show_behind_parent = true
-position = Vector2( 368.554, 219.657 )
+position = Vector2( 369, 221 )
+
+[node name="Mario" parent="Command Blocks" instance=ExtResource( 2 )]
+show_behind_parent = true
+position = Vector2( -50, 99 )
 
 [node name="LuigiUI" parent="." instance=ExtResource( 7 )]
 position = Vector2( 162, 606 )

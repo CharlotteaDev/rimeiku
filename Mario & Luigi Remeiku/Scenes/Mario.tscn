@@ -1,10 +1,11 @@
-[gd_scene load_steps=320 format=2]
+[gd_scene load_steps=321 format=2]
 
 [ext_resource path="res://Scenes/Shadow.tscn" type="PackedScene" id=1]
 [ext_resource path="res://MarioSheets/BattleMarioIdle.png" type="Texture" id=2]
 [ext_resource path="res://MarioSheets/BattleMarioYourTurn.png" type="Texture" id=3]
 [ext_resource path="res://MarioSheets/BattleMarioRun.png" type="Texture" id=4]
 [ext_resource path="res://MarioSheets/BattleMarioJump.png" type="Texture" id=5]
+[ext_resource path="res://Scripts/PuppetM.gd" type="Script" id=6]
 
 [sub_resource type="AtlasTexture" id=1]
 atlas = ExtResource( 2 )
@@ -1183,56 +1184,56 @@ atlas = ExtResource( 3 )
 region = Rect2( 407, 270, 37, 54 )
 
 [sub_resource type="AtlasTexture" id=295]
-atlas = ExtResource( 4 )
-region = Rect2( 0, 0, 45, 54 )
+atlas = ExtResource( 5 )
+region = Rect2( 0, 0, 41, 54 )
 
 [sub_resource type="AtlasTexture" id=296]
 atlas = ExtResource( 4 )
-region = Rect2( 45, 0, 45, 54 )
+region = Rect2( 0, 0, 45, 54 )
 
 [sub_resource type="AtlasTexture" id=297]
 atlas = ExtResource( 4 )
-region = Rect2( 90, 0, 45, 54 )
+region = Rect2( 45, 0, 45, 54 )
 
 [sub_resource type="AtlasTexture" id=298]
 atlas = ExtResource( 4 )
-region = Rect2( 135, 0, 45, 54 )
+region = Rect2( 90, 0, 45, 54 )
 
 [sub_resource type="AtlasTexture" id=299]
 atlas = ExtResource( 4 )
-region = Rect2( 180, 0, 45, 54 )
+region = Rect2( 135, 0, 45, 54 )
 
 [sub_resource type="AtlasTexture" id=300]
 atlas = ExtResource( 4 )
-region = Rect2( 225, 0, 45, 54 )
+region = Rect2( 180, 0, 45, 54 )
 
 [sub_resource type="AtlasTexture" id=301]
 atlas = ExtResource( 4 )
-region = Rect2( 270, 0, 45, 54 )
+region = Rect2( 225, 0, 45, 54 )
 
 [sub_resource type="AtlasTexture" id=302]
 atlas = ExtResource( 4 )
-region = Rect2( 315, 0, 45, 54 )
+region = Rect2( 270, 0, 45, 54 )
 
 [sub_resource type="AtlasTexture" id=303]
 atlas = ExtResource( 4 )
-region = Rect2( 360, 0, 45, 54 )
+region = Rect2( 315, 0, 45, 54 )
 
 [sub_resource type="AtlasTexture" id=304]
 atlas = ExtResource( 4 )
-region = Rect2( 405, 0, 45, 54 )
+region = Rect2( 360, 0, 45, 54 )
 
 [sub_resource type="AtlasTexture" id=305]
 atlas = ExtResource( 4 )
-region = Rect2( 450, 0, 45, 54 )
+region = Rect2( 405, 0, 45, 54 )
 
 [sub_resource type="AtlasTexture" id=306]
 atlas = ExtResource( 4 )
-region = Rect2( 495, 0, 45, 54 )
+region = Rect2( 450, 0, 45, 54 )
 
 [sub_resource type="AtlasTexture" id=307]
-atlas = ExtResource( 5 )
-region = Rect2( 0, 0, 41, 54 )
+atlas = ExtResource( 4 )
+region = Rect2( 495, 0, 45, 54 )
 
 [sub_resource type="SpriteFrames" id=308]
 animations = [ {
@@ -1246,16 +1247,45 @@ animations = [ {
 "name": "yourTurn",
 "speed": 5.0
 }, {
-"frames": [ SubResource( 295 ), SubResource( 296 ), SubResource( 297 ), SubResource( 298 ), SubResource( 299 ), SubResource( 300 ), SubResource( 301 ), SubResource( 302 ), SubResource( 303 ), SubResource( 304 ), SubResource( 305 ), SubResource( 306 ) ],
-"loop": true,
-"name": "run",
-"speed": 5.0
-}, {
-"frames": [ SubResource( 307 ) ],
+"frames": [ SubResource( 295 ) ],
 "loop": true,
 "name": "jump",
 "speed": 5.0
+}, {
+"frames": [ SubResource( 296 ), SubResource( 297 ), SubResource( 298 ), SubResource( 299 ), SubResource( 300 ), SubResource( 301 ), SubResource( 302 ), SubResource( 303 ), SubResource( 304 ), SubResource( 305 ), SubResource( 306 ), SubResource( 307 ) ],
+"loop": true,
+"name": "run",
+"speed": 5.0
 } ]
+
+[sub_resource type="Animation" id=315]
+resource_name = "hitCommand"
+length = 0.4
+step = 0.025
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.15, 0.2, 0.3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 25, 0 ), Vector2( 25, -12 ), Vector2( 25, -20 ), Vector2( 25, -12 ), Vector2( 25, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:animation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ "jump", "idle" ]
+}
 
 [sub_resource type="Animation" id=309]
 resource_name = "idle"
@@ -1275,8 +1305,9 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id=310]
 resource_name = "jump"
-length = 0.4
-step = 0.05
+length = 0.5
+loop = true
+step = 0.025
 tracks/0/type = "value"
 tracks/0/path = NodePath(".:position")
 tracks/0/interp = 1
@@ -1284,10 +1315,10 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.2, 0.4 ),
-"transitions": PoolRealArray( 0.683022, 1, 15.9999 ),
+"times": PoolRealArray( 0, 0.1, 0.2, 0.275, 0.4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
 "update": 0,
-"values": [ Vector2( 25, 0 ), Vector2( 25, -50 ), Vector2( 25, 0 ) ]
+"values": [ Vector2( 25, 0 ), Vector2( 25, -30 ), Vector2( 25, -50 ), Vector2( 25, -30 ), Vector2( 25, 0 ) ]
 }
 tracks/1/type = "value"
 tracks/1/path = NodePath(".:animation")
@@ -1299,7 +1330,7 @@ tracks/1/keys = {
 "times": PoolRealArray( 0, 0.4 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 1,
-"values": [ "jump", "jump" ]
+"values": [ "jump", "idle" ]
 }
 
 [sub_resource type="Animation" id=311]
@@ -1360,36 +1391,30 @@ tracks/0/keys = {
 "values": [ Vector2( 0.56995, 23.6841 ), Vector2( 0.56995, 23.6841 ), Vector2( 25, 23.684 ) ]
 }
 
-[sub_resource type="RectangleShape2D" id=314]
-extents = Vector2( 16.307, 20.8744 )
-
 [node name="Node2D" type="Node2D"]
 
 [node name="PuppetM" type="KinematicBody2D" parent="."]
 scale = Vector2( 2, 2 )
 
 [node name="Mario" type="AnimatedSprite" parent="PuppetM"]
-position = Vector2( 25, 0 )
 frames = SubResource( 308 )
-animation = "yourTurn"
-frame = 75
+animation = "idle"
+frame = 104
 speed_scale = 3.0
 playing = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="PuppetM/Mario"]
 autoplay = "runToTurnLocation"
+anims/hitCommand = SubResource( 315 )
 anims/idle = SubResource( 309 )
 anims/jump = SubResource( 310 )
 anims/runToTurnLocation = SubResource( 311 )
 anims/selecting = SubResource( 312 )
+script = ExtResource( 6 )
 
 [node name="Shadow" parent="PuppetM" instance=ExtResource( 1 )]
-position = Vector2( 25, 23.684 )
+position = Vector2( 0.56995, 23.6841 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="PuppetM/Shadow"]
 autoplay = "runToTurnLocation"
 anims/runToTurnLocation = SubResource( 313 )
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="PuppetM"]
-position = Vector2( 24.8333, 0 )
-shape = SubResource( 314 )
