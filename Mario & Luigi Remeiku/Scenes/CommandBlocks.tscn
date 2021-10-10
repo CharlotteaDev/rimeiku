@@ -694,7 +694,7 @@ tracks/1/keys = {
 [node name="JumpCommand" type="Node2D" parent="."]
 
 [node name="Block" type="Sprite" parent="JumpCommand"]
-position = Vector2( 0, 3 )
+position = Vector2( 0, -12.8821 )
 scale = Vector2( 2, 2 )
 texture = ExtResource( 5 )
 

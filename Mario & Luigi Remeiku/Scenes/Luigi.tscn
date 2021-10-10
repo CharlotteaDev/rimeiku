@@ -842,13 +842,12 @@ animations = [ {
 [node name="Node2D" type="Node2D"]
 
 [node name="KinematicBody2D" type="KinematicBody2D" parent="."]
-scale = Vector2( 2, 2 )
 
 [node name="Luigi" type="AnimatedSprite" parent="KinematicBody2D"]
 position = Vector2( -45.198, -17.6662 )
 frames = SubResource( 208 )
 animation = "idle"
-frame = 194
+frame = 48
 speed_scale = 3.0
 playing = true
 offset = Vector2( 46.0301, 17.7451 )
