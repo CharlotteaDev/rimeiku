@@ -1,4 +1,4 @@
-[gd_scene load_steps=325 format=2]
+[gd_scene load_steps=326 format=2]
 
 [ext_resource path="res://Scenes/Shadow.tscn" type="PackedScene" id=1]
 [ext_resource path="res://MarioSheets/BattleMarioIdle.png" type="Texture" id=2]
@@ -1407,6 +1407,9 @@ tracks/0/keys = {
 "values": [ Vector2( 0.56995, 23.6841 ), Vector2( 0.56995, 23.6841 ), Vector2( 25, 23.684 ) ]
 }
 
+[sub_resource type="RectangleShape2D" id=318]
+extents = Vector2( 9.30993, 18.9258 )
+
 [node name="Node2D" type="Node2D"]
 
 [node name="PuppetM" type="KinematicBody2D" parent="."]
@@ -1414,8 +1417,8 @@ tracks/0/keys = {
 [node name="Mario" type="AnimatedSprite" parent="PuppetM"]
 position = Vector2( 25, 0 )
 frames = SubResource( 308 )
-animation = "yourTurn"
-frame = 29
+animation = "idle"
+frame = 28
 speed_scale = 3.0
 playing = true
 
@@ -1442,3 +1445,6 @@ position = Vector2( 0.56995, 23.6841 )
 [node name="AnimationPlayer" type="AnimationPlayer" parent="PuppetM/Shadow"]
 autoplay = "runToTurnLocation"
 anims/runToTurnLocation = SubResource( 317 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PuppetM"]
+shape = SubResource( 318 )

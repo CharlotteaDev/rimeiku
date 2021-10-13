@@ -27,8 +27,9 @@ texture = ExtResource( 4 )
 
 [node name="Theme" type="AudioStreamPlayer2D" parent="."]
 position = Vector2( 587.765, -58.4097 )
-scale = Vector2( 2, 2 )
+scale = Vector2( 10000, 10000 )
 stream = ExtResource( 5 )
+max_distance = 1e+08
 
 [node name="Command Blocks" parent="." instance=ExtResource( 6 )]
 show_behind_parent = true
