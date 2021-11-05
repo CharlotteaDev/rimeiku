@@ -11,7 +11,7 @@ func _ready():
 	pressable = true
 	set_disabled(false)
 
-func _on_Button_pressed():
+func _on_Button2_pressed():
 	if pressable == true:
 		if GlobalSingleton.disabledOtherB == false:
 			GlobalSingleton.disabledOtherB = true
@@ -19,6 +19,6 @@ func _on_Button_pressed():
 			animationPlayerRect.play("Fade out")
 			animationPlayer.play("FadeOut")
 			yield(get_tree().create_timer(delayTimer), "timeout")
-			get_tree().change_scene("./Scenes/Main.tscn")
+			get_tree().change_scene("./Scenes/Overworld.tscn")
 		else:
 			set_disabled(true)

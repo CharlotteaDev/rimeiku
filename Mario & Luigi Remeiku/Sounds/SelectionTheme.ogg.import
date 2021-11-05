@@ -12,4 +12,4 @@ dest_files=[ "res://.import/SelectionTheme.ogg-2bcc4dd40910aac289f73e3c11e45554.
 [params]
 
 loop=true
-loop_offset=0
+loop_offset=0.0
