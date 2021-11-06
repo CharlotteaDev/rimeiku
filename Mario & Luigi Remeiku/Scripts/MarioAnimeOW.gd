@@ -1,15 +1,18 @@
-extends AnimatedSprite
+extends KinematicBody2D
 
 onready var facingDirection = "south"
 onready var stateMachine = "idle"
+onready var sprite : AnimatedSprite = $Mario
 
 func _ready():
-	speed_scale = 3
+	sprite.speed_scale = 2
 
 func  _input(event):
-	if event.is_action_pressed("down"):
-		animation = "moveSouth"
-		speed_scale = 20
+	if Input.is_action_pressed("down"):
+		sprite.play("moveSouth")
+		sprite.speed_scale = 6
+		print("moving south")
 	else:
-		animation = "idle"
-		speed_scale = 3
+		sprite.play("idle")
+		sprite.speed_scale = 2
+		print("idle")
