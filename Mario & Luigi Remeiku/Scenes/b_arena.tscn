@@ -1,0 +1,62 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://Scenes/b_luigi.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scenes/b_mario.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scenes/kuribo.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Backgrounds/b_hiko_bg.png" type="Texture" id=4]
+[ext_resource path="res://Sounds/battle.ogg" type="AudioStream" id=5]
+[ext_resource path="res://Scenes/cmd_blocks.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Scenes/ui_luigi.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Scenes/ui_mario.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Scenes/b_debug.tscn" type="PackedScene" id=9]
+
+
+
+
+
+
+
+
+
+
+
+
+[node name="Arena" type="Node2D"]
+
+[node name="Luigi" parent="." instance=ExtResource( 1 )]
+position = Vector2( 191.38, 421.85 )
+scale = Vector2( 2, 2 )
+
+[node name="Goomba" parent="." instance=ExtResource( 3 )]
+position = Vector2( 747.426, 365.316 )
+
+[node name="Background" type="Sprite" parent="."]
+show_behind_parent = true
+position = Vector2( 483.041, -2 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 4 )
+
+[node name="Theme" type="AudioStreamPlayer2D" parent="."]
+position = Vector2( 587.765, -58.4097 )
+scale = Vector2( 10000, 10000 )
+stream = ExtResource( 5 )
+max_distance = 1e+08
+
+[node name="Command Blocks" parent="." instance=ExtResource( 6 )]
+show_behind_parent = true
+position = Vector2( 369, 221 )
+
+[node name="Mario" parent="Command Blocks" instance=ExtResource( 2 )]
+show_behind_parent = true
+position = Vector2( -111.95, 99 )
+scale = Vector2( 2, 2 )
+
+[node name="LuigiUI" parent="." instance=ExtResource( 7 )]
+position = Vector2( 162, 606 )
+
+[node name="MarioUI" parent="." instance=ExtResource( 8 )]
+show_behind_parent = true
+position = Vector2( 292, 606 )
+
+[node name="Node2D" parent="." instance=ExtResource( 9 )]
+position = Vector2( 1024, 0 )
