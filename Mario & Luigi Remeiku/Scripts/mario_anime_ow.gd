@@ -1,9 +1,9 @@
 extends KinematicBody2D
 
-onready var facingDirection = ""
-onready var stateMachine = ""
+onready var facing_direction = ""
+onready var state_machine = ""
 onready var sprite : AnimatedSprite = $Mario
-onready var spriteFrame = 24.0/60.0
+onready var sprite_frame = 24.0/60.0
 export var speed = 300
 var direction = Vector2()
 
@@ -29,53 +29,53 @@ func  get_input():
 	match direction:
 		Vector2(-1,-1):
 			sprite.animation = "moveWestNorth"
-			sprite.frame = (int(spriteFrame) % sprite.frames.get_frame_count(sprite.animation))
+			sprite.frame = (int(sprite_frame) % sprite.frames.get_frame_count(sprite.animation))
 			sprite.playing = false
-			facingDirection = "WestNorth"
+			facing_direction = "WestNorth"
 			sprite.speed_scale = 6
 		Vector2(-1,0):
 			sprite.animation = "moveWest"
-			sprite.frame = (int(spriteFrame) % sprite.frames.get_frame_count(sprite.animation))
+			sprite.frame = (int(sprite_frame) % sprite.frames.get_frame_count(sprite.animation))
 			sprite.playing = false
-			facingDirection = "West"
+			facing_direction = "West"
 			sprite.speed_scale = 6
 		Vector2(-1,1):
 			sprite.animation = "moveSouthWest"
-			sprite.frame = (int(spriteFrame) % sprite.frames.get_frame_count(sprite.animation))
+			sprite.frame = (int(sprite_frame) % sprite.frames.get_frame_count(sprite.animation))
 			sprite.playing = false
-			facingDirection = "SouthWest"
+			facing_direction = "SouthWest"
 			sprite.speed_scale = 6
 		Vector2(1,-1):
 			sprite.animation = "moveNorthEast"
-			sprite.frame = (int(spriteFrame) % sprite.frames.get_frame_count(sprite.animation))
+			sprite.frame = (int(sprite_frame) % sprite.frames.get_frame_count(sprite.animation))
 			sprite.playing = false
-			facingDirection = "NorthEast"
+			facing_direction = "NorthEast"
 		Vector2(1,0):
 			sprite.animation = "moveEast"
-			sprite.frame = (int(spriteFrame) % sprite.frames.get_frame_count(sprite.animation))
+			sprite.frame = (int(sprite_frame) % sprite.frames.get_frame_count(sprite.animation))
 			sprite.playing = false
-			facingDirection = "East"
+			facing_direction = "East"
 			sprite.speed_scale = 6
 		Vector2(1,1):
 			sprite.animation = "moveEastSouth"
-			sprite.frame = (int(spriteFrame) % sprite.frames.get_frame_count(sprite.animation))
+			sprite.frame = (int(sprite_frame) % sprite.frames.get_frame_count(sprite.animation))
 			sprite.playing = false
-			facingDirection = "EastSouth"
+			facing_direction = "EastSouth"
 			sprite.speed_scale = 6
 		Vector2(0,-1):
 			sprite.animation = "moveNorth"
-			sprite.frame = (int(spriteFrame) % sprite.frames.get_frame_count(sprite.animation))
+			sprite.frame = (int(sprite_frame) % sprite.frames.get_frame_count(sprite.animation))
 			sprite.playing = false
-			facingDirection = "North"
+			facing_direction = "North"
 			sprite.speed_scale = 6
 		Vector2(0,1):
 			sprite.animation = "moveSouth"
-			sprite.frame = (int(spriteFrame) % sprite.frames.get_frame_count(sprite.animation))
+			sprite.frame = (int(sprite_frame) % sprite.frames.get_frame_count(sprite.animation))
 			sprite.playing = false
-			facingDirection = "South"
+			facing_direction = "South"
 			sprite.speed_scale = 6
 		Vector2(0,0):
-			sprite.animation = ("idle"+str(facingDirection))
+			sprite.animation = ("idle"+str(facing_direction))
 			sprite.playing = true
 			sprite.speed_scale = 3
 
@@ -86,4 +86,4 @@ func _physics_process(_delta):
 	direction = move_and_slide(direction)
 	
 func _process(_delta):
-	spriteFrame += 24.0/60.0
+	sprite_frame += 24.0/60.0

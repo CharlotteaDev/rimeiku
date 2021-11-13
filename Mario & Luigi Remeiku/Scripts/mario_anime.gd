@@ -1,7 +1,7 @@
 extends AnimationPlayer
 
-onready var Mario = get_parent()
-onready var stateMachine = "yourTurn"
+onready var mario = get_parent()
+onready var state_machine = "yourTurn"
 
 onready var jumpExcel = 0
 onready var jumpStrgt = 20
@@ -18,19 +18,15 @@ func _ready():
 
 func _input(event):
 	if event.is_action_pressed("A"):# and !disabled:
-		Mario.animation = "jump"
-		Mario.move_local_y(-jumpStrgt)
-		
-		
-		
-		stateMachine = "jump"
+		mario.animation = "jump"
+		mario.move_local_y(-jumpStrgt)
+		state_machine = "jump"
 		print("jumped")
 
 
 #Dev notes
 
 #I WAS WRONGGGGGGG, there actually isn't a difference between the jumping and falling
-#No excelleration it looks like
-#Shit weird yo!
-
+#No acceleration/decceletation (in animation) it looks like
+#Shit weird af yo!
 #Don't forget dust particles soon

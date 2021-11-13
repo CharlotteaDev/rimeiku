@@ -1,12 +1,9 @@
 extends AnimationPlayer
 
-var currentAnimation = "start"
+var current_animation_cmd = "start"
 
 func _on_BlockAnimationPlayer_animation_finished(start):
-	var currentAnimation = "idle"
-	print(currentAnimation)
-	#just for me to see if it's actually loading correctly
-	if currentAnimation == "idle":
+	var current_animation_cmd = "idle"
+	if current_animation_cmd == "idle":
 		play("IdleSouth")
-	#plays the idle animation after the start animation
-	
+#redo this entire code when i have to, seriously charlotte wtf did you try doing here

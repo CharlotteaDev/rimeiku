@@ -15,21 +15,6 @@
 [ext_resource path="res://Misc/Battle/jump_text.png" type="Texture" id=13]
 [ext_resource path="res://Misc/Battle/hammer_text.png" type="Texture" id=14]
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 [sub_resource type="Animation" id=1]
 resource_name = "IdleSouth"
 length = 2.0
@@ -709,7 +694,7 @@ tracks/1/keys = {
 [node name="JumpCommand" type="Node2D" parent="."]
 
 [node name="Block" type="Sprite" parent="JumpCommand"]
-position = Vector2( 0, -12.8821 )
+position = Vector2( 0, 3 )
 scale = Vector2( 2, 2 )
 texture = ExtResource( 5 )
 
