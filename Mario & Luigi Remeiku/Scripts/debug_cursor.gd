@@ -1,6 +1,6 @@
 extends Sprite
 
-#again, redo it...
+# again, redo it...
 
 #onready var posX = 1
 #onready var posY = 1

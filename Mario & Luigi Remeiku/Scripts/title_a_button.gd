@@ -1,26 +1,26 @@
 extends Button
 
-onready var animationPlayerRect : AnimationPlayer = get_node("../AnimationPlayerRect")
-onready var animationPlayer : AnimationPlayer = get_node("AnimationPlayer")
-onready var pressSFX = get_node("../ButtonSfx")
-
+var delay_timer = 1.5
+onready var animation_player_rect : AnimationPlayer = get_node("../AnimationPlayerRect")
+onready var animation_player : AnimationPlayer = get_node("AnimationPlayer")
+onready var press_sfx = get_node("../ButtonSfx")
 onready var pressable = false
-var delayTimer = 1.5
 
 func _ready():
 	set_disabled(true)
-	yield(get_tree().create_timer(delayTimer), "timeout")
+	yield(get_tree().create_timer(delay_timer), "timeout")
 	pressable = true
 	set_disabled(false)
 
 func _on_Button2_pressed():
-	if pressable == true and GlobalSingleton.disabledOtherB == false:
-			GlobalSingleton.disabledOtherB = true
+	if pressable == true && GlobalSingleton.disabled_other_b == false:
+			GlobalSingleton.disabled_other_b = true
 			set_disabled(true)
-			animationPlayerRect.play("Fade out")
-			pressSFX.playing = true
-			animationPlayer.play("FadeOut")
-			yield(get_tree().create_timer(delayTimer), "timeout")
-			get_tree().change_scene("./Scenes/o_playground.tscn")
+			animation_player_rect.play("fade_out")
+			press_sfx.playing = true
+			animation_player.play("fade_out")
+			yield(get_tree().create_timer(delay_timer), "timeout")
+			# warning-ignore:return_value_discarded
+			get_tree().change_scene("./scenes/o_playground.tscn")
 	else:
 		set_disabled(true)

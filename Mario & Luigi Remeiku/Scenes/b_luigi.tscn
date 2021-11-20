@@ -1,9 +1,7 @@
 [gd_scene load_steps=211 format=2]
 
-[ext_resource path="res://Scenes/shadow_a.tscn" type="PackedScene" id=1]
-[ext_resource path="res://LuigiSheets/b_luigi_idle.png" type="Texture" id=2]
-
-
+[ext_resource path="res://scenes/shadow_a.tscn" type="PackedScene" id=1]
+[ext_resource path="res://luigi_sheets/b_luigi_idle.png" type="Texture" id=2]
 
 [sub_resource type="AtlasTexture" id=1]
 atlas = ExtResource( 2 )
@@ -849,7 +847,7 @@ animations = [ {
 position = Vector2( -45.198, -17.6662 )
 frames = SubResource( 208 )
 animation = "idle"
-frame = 48
+frame = 109
 speed_scale = 3.0
 playing = true
 offset = Vector2( 46.0301, 17.7451 )

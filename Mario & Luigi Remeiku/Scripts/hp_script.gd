@@ -1,6 +1,6 @@
 extends Sprite
 
-#redo code
+# redo code
 
 ##HP numbers nodes
 #onready var xxoHP = get_node("./001H")

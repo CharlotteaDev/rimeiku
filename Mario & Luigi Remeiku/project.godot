@@ -16,7 +16,7 @@ _global_script_class_icons={
 [application]
 
 config/name="Mario & Luigi Rimeiku Github"
-run/main_scene="res://Scenes/titlescreen.tscn"
+run/main_scene="res://scenes/titlescreen.tscn"
 boot_splash/image="res://Misc/logo.png"
 boot_splash/fullsize=false
 boot_splash/bg_color=Color( 0.0745098, 0, 0.309804, 1 )
@@ -28,7 +28,7 @@ default_bus_layout="res://master.tres"
 
 [autoload]
 
-GlobalSingleton="*res://Scenes/global_singleton.tscn"
+GlobalSingleton="*res://scenes/global_singleton.tscn"
 
 [display]
 

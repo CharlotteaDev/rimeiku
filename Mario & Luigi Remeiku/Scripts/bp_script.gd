@@ -1,6 +1,6 @@
 extends Sprite
 
-#CHARLOTTE WHAT IS THIS CRAPPY CODE BRUH REDO IT
+# CHARLOTTE WHAT IS THIS CRAPPY CODE BRUH REDO IT
 
 ##HP numbers nodes
 #onready var xxoBP = get_node("./001S")

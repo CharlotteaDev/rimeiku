@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/hand_icon.png-e389bcecd9b8ae709fa803ea8df885ac.stex"
+path="res://.import/hand_icon.png-2918ae78aeef392881cbbf408d9a6da5.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Misc/Battle/hand_icon.png"
-dest_files=[ "res://.import/hand_icon.png-e389bcecd9b8ae709fa803ea8df885ac.stex" ]
+source_file="res://Misc/battle/hand_icon.png"
+dest_files=[ "res://.import/hand_icon.png-2918ae78aeef392881cbbf408d9a6da5.stex" ]
 
 [params]
 

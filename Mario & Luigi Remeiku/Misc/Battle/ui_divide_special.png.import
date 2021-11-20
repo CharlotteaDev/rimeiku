@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/ui_divide_special.png-63a804ea2b5062905e66d489d5b3bf4f.stex"
+path="res://.import/ui_divide_special.png-4993fd3ca8c6893761dd9af3223aac8d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Misc/Battle/ui_divide_special.png"
-dest_files=[ "res://.import/ui_divide_special.png-63a804ea2b5062905e66d489d5b3bf4f.stex" ]
+source_file="res://Misc/battle/ui_divide_special.png"
+dest_files=[ "res://.import/ui_divide_special.png-4993fd3ca8c6893761dd9af3223aac8d.stex" ]
 
 [params]
 
