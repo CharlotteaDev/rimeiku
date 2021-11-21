@@ -21,6 +21,6 @@ func _on_Button2_pressed():
 			animation_player.play("fade_out")
 			yield(get_tree().create_timer(delay_timer), "timeout")
 			# warning-ignore:return_value_discarded
-			get_tree().change_scene("./scenes/o_playground.tscn")
+			get_tree().change_scene("./castle_grounds_1/castle_grounds_1.tscn")
 	else:
 		set_disabled(true)
