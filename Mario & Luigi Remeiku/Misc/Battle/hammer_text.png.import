@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/hammer_text.png-758c7ca493b654ec937addc8601c4416.stex"
+path="res://.import/hammer_text.png-a0b34b6662eb428fe97cea4782d2c01d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Misc/battle/hammer_text.png"
-dest_files=[ "res://.import/hammer_text.png-758c7ca493b654ec937addc8601c4416.stex" ]
+source_file="res://misc/battle/hammer_text.png"
+dest_files=[ "res://.import/hammer_text.png-a0b34b6662eb428fe97cea4782d2c01d.stex" ]
 
 [params]
 

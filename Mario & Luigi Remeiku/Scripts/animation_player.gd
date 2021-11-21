@@ -1,6 +1,7 @@
 extends AnimationPlayer
 
 func _on_ready():
+	# warning-ignore:unused_variable
 	var current_animation_cmd = "start"
 
 func _on_BlockAnimationPlayer_animation_finished(_start):

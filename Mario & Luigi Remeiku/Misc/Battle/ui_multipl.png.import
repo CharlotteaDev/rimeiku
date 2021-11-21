@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/ui_multipl.png-8119e43369fe20029ea3ff3046fa8873.stex"
+path="res://.import/ui_multipl.png-7c4a580522578952490449bef6e45b8a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Misc/battle/ui_multipl.png"
-dest_files=[ "res://.import/ui_multipl.png-8119e43369fe20029ea3ff3046fa8873.stex" ]
+source_file="res://misc/battle/ui_multipl.png"
+dest_files=[ "res://.import/ui_multipl.png-7c4a580522578952490449bef6e45b8a.stex" ]
 
 [params]
 

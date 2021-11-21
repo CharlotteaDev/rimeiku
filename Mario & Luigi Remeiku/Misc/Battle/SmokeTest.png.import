@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/SmokeTest.png-2fe8c082eef37cc77fb16207a617c581.stex"
+path="res://.import/SmokeTest.png-0da1c149934743271f022e757ebf6916.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Misc/battle/SmokeTest.png"
-dest_files=[ "res://.import/SmokeTest.png-2fe8c082eef37cc77fb16207a617c581.stex" ]
+source_file="res://misc/battle/SmokeTest.png"
+dest_files=[ "res://.import/SmokeTest.png-0da1c149934743271f022e757ebf6916.stex" ]
 
 [params]
 
