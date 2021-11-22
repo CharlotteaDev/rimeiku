@@ -1,0 +1,232 @@
+[gd_scene load_steps=18 format=2]
+
+[ext_resource path="res://scenes/o_mario.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scenes/castle_grounds_1/pink_flower_2.png" type="Texture" id=2]
+[ext_resource path="res://scenes/castle_grounds_1/pink_flower_3.png" type="Texture" id=3]
+[ext_resource path="res://misc/object_test.png" type="Texture" id=4]
+[ext_resource path="res://scenes/castle_grounds_1/foreground.png" type="Texture" id=5]
+[ext_resource path="res://scenes/castle_grounds_1/pink_flower_1.png" type="Texture" id=6]
+[ext_resource path="res://misc/transform_test.png" type="Texture" id=7]
+[ext_resource path="res://scenes/castle_grounds_1/blue_flower_2.png" type="Texture" id=8]
+[ext_resource path="res://scenes/castle_grounds_1/blue_flower_1.png" type="Texture" id=9]
+[ext_resource path="res://scenes/castle_grounds_1/blue_flower_3.png" type="Texture" id=10]
+[ext_resource path="res://scenes/castle_grounds_1/blue_flower_4.png" type="Texture" id=11]
+[ext_resource path="res://scenes/castle_grounds_1/yellow_flower_1.png" type="Texture" id=12]
+[ext_resource path="res://scenes/castle_grounds_1/yellow_flower_3.png" type="Texture" id=13]
+[ext_resource path="res://scenes/castle_grounds_1/banner.png" type="Texture" id=14]
+[ext_resource path="res://scenes/castle_grounds_1/yellow_flower_2.png" type="Texture" id=15]
+[ext_resource path="res://scripts/drag_cam_controller.gd" type="Script" id=16]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 16, 16 )
+
+[node name="Node2D" type="Node2D"]
+
+[node name="TransformTest" type="StaticBody2D" parent="."]
+position = Vector2( 1921.33, 141.152 )
+scale = Vector2( 8.727, 2.947 )
+
+[node name="Sprite" type="Sprite" parent="TransformTest"]
+texture = ExtResource( 7 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TransformTest"]
+position = Vector2( -39.4695, -1.51069 )
+scale = Vector2( 0.572935, 1.69664 )
+shape = SubResource( 1 )
+
+[node name="ObjectTest" type="StaticBody2D" parent="."]
+position = Vector2( 1576.88, 136.7 )
+scale = Vector2( 5, 5 )
+
+[node name="Sprite" type="Sprite" parent="ObjectTest"]
+texture = ExtResource( 4 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ObjectTest"]
+position = Vector2( 68.89, 0.890398 )
+shape = SubResource( 1 )
+
+[node name="Mario" parent="." instance=ExtResource( 1 )]
+z_index = 1
+
+[node name="Foreground" type="StaticBody2D" parent="."]
+position = Vector2( -103.212, -515.224 )
+scale = Vector2( 2, 2 )
+
+[node name="Sprite" type="Sprite" parent="Foreground"]
+texture = ExtResource( 5 )
+
+[node name="FlowerBatch1" type="Node" parent="."]
+
+[node name="PinkFlower1" type="Sprite" parent="FlowerBatch1"]
+position = Vector2( 94.7826, -267.231 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 6 )
+
+[node name="PinkFlower2" type="Sprite" parent="FlowerBatch1"]
+position = Vector2( -101.217, -103.231 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 2 )
+
+[node name="PinkFlower3" type="Sprite" parent="FlowerBatch1"]
+position = Vector2( 104.783, -129.231 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 3 )
+
+[node name="BlueFlower1" type="Sprite" parent="FlowerBatch1"]
+position = Vector2( -95.2174, -265.231 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 9 )
+
+[node name="BlueFlower2" type="Sprite" parent="FlowerBatch1"]
+position = Vector2( 58.7826, -97.2312 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 8 )
+
+[node name="BlueFlower3" type="Sprite" parent="FlowerBatch1"]
+position = Vector2( 102.783, -243.231 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 10 )
+
+[node name="BlueFlower4" type="Sprite" parent="FlowerBatch1"]
+position = Vector2( -67.2174, -97.2312 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 11 )
+
+[node name="YellowFlower1" type="Sprite" parent="FlowerBatch1"]
+position = Vector2( 64.7826, -267.231 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 12 )
+
+[node name="YellowFlower2" type="Sprite" parent="FlowerBatch1"]
+position = Vector2( 94.7826, -101.231 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 15 )
+
+[node name="YellowFlower3" type="Sprite" parent="FlowerBatch1"]
+position = Vector2( -99.2174, -135.231 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 13 )
+
+[node name="FlowerBatch2" type="Node" parent="."]
+
+[node name="PinkFlower1" type="Sprite" parent="FlowerBatch2"]
+position = Vector2( -433.217, 20.772 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 6 )
+
+[node name="PinkFlower2" type="Sprite" parent="FlowerBatch2"]
+position = Vector2( -629.217, 184.772 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 2 )
+
+[node name="PinkFlower3" type="Sprite" parent="FlowerBatch2"]
+position = Vector2( -423.217, 158.772 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 3 )
+
+[node name="BlueFlower1" type="Sprite" parent="FlowerBatch2"]
+position = Vector2( -623.217, 22.772 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 9 )
+
+[node name="BlueFlower2" type="Sprite" parent="FlowerBatch2"]
+position = Vector2( -469.217, 190.772 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 8 )
+
+[node name="BlueFlower3" type="Sprite" parent="FlowerBatch2"]
+position = Vector2( -425.217, 44.772 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 10 )
+
+[node name="BlueFlower4" type="Sprite" parent="FlowerBatch2"]
+position = Vector2( -595.217, 190.772 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 11 )
+
+[node name="YellowFlower1" type="Sprite" parent="FlowerBatch2"]
+position = Vector2( -463.217, 20.772 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 12 )
+
+[node name="YellowFlower2" type="Sprite" parent="FlowerBatch2"]
+position = Vector2( -433.217, 186.772 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 15 )
+
+[node name="YellowFlower3" type="Sprite" parent="FlowerBatch2"]
+position = Vector2( -627.217, 152.772 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 13 )
+
+[node name="FlowerBatch3" type="Node" parent="."]
+
+[node name="PinkFlower1" type="Sprite" parent="FlowerBatch3"]
+position = Vector2( 624.795, 22.7729 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 6 )
+
+[node name="PinkFlower2" type="Sprite" parent="FlowerBatch3"]
+position = Vector2( 428.795, 186.773 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 2 )
+
+[node name="PinkFlower3" type="Sprite" parent="FlowerBatch3"]
+position = Vector2( 634.795, 160.773 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 3 )
+
+[node name="BlueFlower1" type="Sprite" parent="FlowerBatch3"]
+position = Vector2( 434.795, 24.7729 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 9 )
+
+[node name="BlueFlower2" type="Sprite" parent="FlowerBatch3"]
+position = Vector2( 588.795, 192.773 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 8 )
+
+[node name="BlueFlower3" type="Sprite" parent="FlowerBatch3"]
+position = Vector2( 632.795, 46.7729 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 10 )
+
+[node name="BlueFlower4" type="Sprite" parent="FlowerBatch3"]
+position = Vector2( 462.795, 192.773 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 11 )
+
+[node name="YellowFlower1" type="Sprite" parent="FlowerBatch3"]
+position = Vector2( 594.795, 22.7729 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 12 )
+
+[node name="YellowFlower2" type="Sprite" parent="FlowerBatch3"]
+position = Vector2( 624.795, 188.773 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 15 )
+
+[node name="YellowFlower3" type="Sprite" parent="FlowerBatch3"]
+position = Vector2( 430.795, 154.773 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 13 )
+
+[node name="Banner2" type="Sprite" parent="."]
+position = Vector2( -1031.22, -513.209 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 14 )
+
+[node name="Banner3" type="Sprite" parent="."]
+position = Vector2( -1031.23, -31.2266 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 14 )
+
+[node name="Banner1" type="Sprite" parent="."]
+position = Vector2( -1031.21, -993.219 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 14 )
+
+[node name="CameraBig" type="Camera2D" parent="."]
+position = Vector2( -2.27771, -306.796 )
+zoom = Vector2( 2.173, 2.702 )
+script = ExtResource( 16 )
