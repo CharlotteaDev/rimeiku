@@ -1781,7 +1781,7 @@ animations = [ {
 [sub_resource type="RectangleShape2D" id=365]
 extents = Vector2( 10, 17.3945 )
 
-[node name="Node2D" type="Node2D"]
+[node name="Mario" type="Node2D"]
 scale = Vector2( 2, 2 )
 
 [node name="PuppetM" type="KinematicBody2D" parent="."]

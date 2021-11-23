@@ -36,6 +36,7 @@ settings/fps/force_fps=60
 [display]
 
 window/size/resizable=false
+mouse_cursor/custom_image="res://misc/cursor.png"
 
 [global]
 

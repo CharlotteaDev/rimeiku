@@ -839,7 +839,7 @@ animations = [ {
 "speed": 5.0
 } ]
 
-[node name="Node2D" type="Node2D"]
+[node name="Luigi" type="Node2D"]
 
 [node name="KinematicBody2D" type="KinematicBody2D" parent="."]
 
@@ -847,7 +847,7 @@ animations = [ {
 position = Vector2( -45.198, -17.6662 )
 frames = SubResource( 208 )
 animation = "idle"
-frame = 134
+frame = 71
 speed_scale = 3.0
 playing = true
 offset = Vector2( 46.0301, 17.7451 )

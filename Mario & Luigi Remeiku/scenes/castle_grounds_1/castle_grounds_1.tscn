@@ -21,7 +21,7 @@
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 16, 16 )
 
-[node name="Node2D" type="Node2D"]
+[node name="Castle Grounds 1" type="Node2D"]
 
 [node name="TransformTest" type="StaticBody2D" parent="."]
 position = Vector2( 1921.33, 141.152 )
@@ -234,3 +234,4 @@ script = ExtResource( 16 )
 
 [node name="Theme" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 17 )
+autoplay = true

@@ -4,7 +4,7 @@
 [ext_resource path="res://Misc/battle/heart_ui.png" type="Texture" id=2]
 [ext_resource path="res://Misc/battle/bros_ui.png" type="Texture" id=4]
 
-[node name="Node2D" type="Node2D"]
+[node name="LuigiUI" type="Node2D"]
 
 [node name="Main" type="Sprite" parent="."]
 scale = Vector2( 2, 2 )

@@ -459,7 +459,7 @@ animations = [ {
 "speed": 5.0
 } ]
 
-[node name="Node2D" type="Node2D"]
+[node name="Kuribo" type="Node2D"]
 
 [node name="KinematicBody2D" type="KinematicBody2D" parent="."]
 scale = Vector2( 2, 2 )
@@ -467,7 +467,7 @@ scale = Vector2( 2, 2 )
 [node name="Goomba" type="AnimatedSprite" parent="KinematicBody2D"]
 frames = SubResource( 113 )
 animation = "idle"
-frame = 69
+frame = 92
 speed_scale = 3.0
 playing = true
 

@@ -125,7 +125,6 @@ func _process(_delta):
 func _on_Area2D_input_event(viewport, event, shape_idx): # DEBUG CODE (Disabled on inactive debug)
 	if Input.is_action_just_pressed("mouse"): # DEBUG CODE (Disabled on inactive debug)
 		dragging = true # DEBUG CODE (Disabled on inactive debug)
-		print(facing_direction)
 		if dragging == true: # DEBUG CODE (Disabled on inactive debug)
 			movement_disabled = true # DEBUG CODE (Disabled on inactive debug)
 			sprite.speed_scale = 3 # DEBUG CODE (Disabled on inactive debug)

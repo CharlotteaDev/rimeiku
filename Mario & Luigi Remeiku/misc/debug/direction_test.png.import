@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/CursorD.png-ae671802863e99d334e9122763d34934.stex"
+path="res://.import/direction_test.png-f55e696f03396c58a887be6d5b911d2e.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Misc/Battle/Debug/CursorD.png"
-dest_files=[ "res://.import/CursorD.png-ae671802863e99d334e9122763d34934.stex" ]
+source_file="res://misc/debug/direction_test.png"
+dest_files=[ "res://.import/direction_test.png-f55e696f03396c58a887be6d5b911d2e.stex" ]
 
 [params]
 
@@ -28,6 +28,7 @@ process/fix_alpha_border=true
 process/premult_alpha=false
 process/HDR_as_SRGB=false
 process/invert_color=false
+process/normal_map_invert_y=false
 stream=false
 size_limit=0
 detect_3d=false
