@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=2]
+[gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://scenes/o_mario.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/castle_grounds_1/pink_flower_2.png" type="Texture" id=2]
@@ -16,6 +16,7 @@
 [ext_resource path="res://scenes/castle_grounds_1/banner.png" type="Texture" id=14]
 [ext_resource path="res://scenes/castle_grounds_1/yellow_flower_2.png" type="Texture" id=15]
 [ext_resource path="res://scripts/drag_cam_controller.gd" type="Script" id=16]
+[ext_resource path="res://sounds/minigame_2.ogg" type="AudioStream" id=17]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 16, 16 )
@@ -230,3 +231,6 @@ texture = ExtResource( 14 )
 position = Vector2( -2.27771, -306.796 )
 zoom = Vector2( 2.173, 2.702 )
 script = ExtResource( 16 )
+
+[node name="Theme" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 17 )

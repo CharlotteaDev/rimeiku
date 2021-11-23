@@ -29,9 +29,17 @@ default_bus_layout="res://master.tres"
 
 GlobalSingleton="*res://scenes/global_singleton.tscn"
 
+[debug]
+
+settings/fps/force_fps=60
+
 [display]
 
 window/size/resizable=false
+
+[global]
+
+fps=false
 
 [importer_defaults]
 

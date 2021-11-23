@@ -30,6 +30,7 @@ position = Vector2( 747.426, 365.316 )
 position = Vector2( 587.765, -58.4097 )
 scale = Vector2( 10000, 10000 )
 stream = ExtResource( 5 )
+autoplay = true
 max_distance = 1e+08
 
 [node name="LuigiUI" parent="." instance=ExtResource( 7 )]

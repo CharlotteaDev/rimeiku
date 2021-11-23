@@ -1,26 +1,36 @@
 extends Button
 
 var delay_timer = 1.5
-onready var animation_player_rect : AnimationPlayer = get_node("../AnimationPlayerRect")
-onready var animation_player : AnimationPlayer = get_node("AnimationPlayer")
+onready var pressable_b = false
+onready var volume = 100.0/100.0
+onready var button_pressed = false
+
+onready var bg_theme = get_node("../Theme")
 onready var press_sfx = get_node("../ButtonSfx")
-onready var pressable = false
+onready var animation_player_rect : AnimationPlayer = get_node("../AnimationPlayerRect")
+onready var adventure_button = get_node("../Button2")
 
 func _ready():
 	set_disabled(true)
 	yield(get_tree().create_timer(delay_timer), "timeout")
-	pressable = true
+	pressable_b = true
 	set_disabled(false)
 
 func _on_Button_pressed():
-	if pressable == true && GlobalSingleton.disabled_other_b == false:
-			GlobalSingleton.disabled_other_b = true
-			set_disabled(true)
+	if pressable_b && adventure_button.pressable_a:
+			button_pressed = true
+			pressable_b = false
+			adventure_button.pressable_a = false
 			animation_player_rect.play("fade_out")
 			press_sfx.playing = true
-			animation_player.play("fade_out")
 			yield(get_tree().create_timer(delay_timer), "timeout")
 			# warning-ignore:return_value_discarded
 			get_tree().change_scene("./scenes/b_arena.tscn")
-	else:
+
+func _process(_delta):
+	if  button_pressed == true:
+		bg_theme.volume_db = volume
+		volume -= 25.0/100.0
+
+	if !pressable_b:
 		set_disabled(true)
