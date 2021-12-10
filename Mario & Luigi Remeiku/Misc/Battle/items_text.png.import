@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/items_text.png-fd01fb16e3f4209d85d870b6134affef.stex"
+path="res://.import/items_text.png-8428f1780357fe0cc2a9d7069f903bf8.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://misc/battle/items_text.png"
-dest_files=[ "res://.import/items_text.png-fd01fb16e3f4209d85d870b6134affef.stex" ]
+source_file="res://Misc/Battle/items_text.png"
+dest_files=[ "res://.import/items_text.png-8428f1780357fe0cc2a9d7069f903bf8.stex" ]
 
 [params]
 
@@ -28,6 +28,7 @@ process/fix_alpha_border=true
 process/premult_alpha=false
 process/HDR_as_SRGB=false
 process/invert_color=false
+process/normal_map_invert_y=false
 stream=false
 size_limit=0
 detect_3d=false

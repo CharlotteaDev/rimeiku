@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/bros_ui.png-c9c52a6dbbf5cdff194314d026c4efce.stex"
+path="res://.import/bros_ui.png-a7dc89bc78c32a588ba80d1b4bd8ff3a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://misc/battle/bros_ui.png"
-dest_files=[ "res://.import/bros_ui.png-c9c52a6dbbf5cdff194314d026c4efce.stex" ]
+source_file="res://Misc/Battle/bros_ui.png"
+dest_files=[ "res://.import/bros_ui.png-a7dc89bc78c32a588ba80d1b4bd8ff3a.stex" ]
 
 [params]
 
@@ -28,6 +28,7 @@ process/fix_alpha_border=true
 process/premult_alpha=false
 process/HDR_as_SRGB=false
 process/invert_color=false
+process/normal_map_invert_y=false
 stream=false
 size_limit=0
 detect_3d=false

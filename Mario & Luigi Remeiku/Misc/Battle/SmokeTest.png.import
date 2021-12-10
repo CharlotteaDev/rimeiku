@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/SmokeTest.png-0da1c149934743271f022e757ebf6916.stex"
+path="res://.import/SmokeTest.png-da01a10fc2ca6e320c0b6ce6f7ef3e0a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://misc/battle/SmokeTest.png"
-dest_files=[ "res://.import/SmokeTest.png-0da1c149934743271f022e757ebf6916.stex" ]
+source_file="res://Misc/Battle/SmokeTest.png"
+dest_files=[ "res://.import/SmokeTest.png-da01a10fc2ca6e320c0b6ce6f7ef3e0a.stex" ]
 
 [params]
 
@@ -28,6 +28,7 @@ process/fix_alpha_border=true
 process/premult_alpha=false
 process/HDR_as_SRGB=false
 process/invert_color=false
+process/normal_map_invert_y=false
 stream=false
 size_limit=0
 detect_3d=false
