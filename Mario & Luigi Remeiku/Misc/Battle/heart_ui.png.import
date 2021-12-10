@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/heart_ui.png-fe80f1cb6aa2fe95d61e1a704d6176d8.stex"
+path="res://.import/heart_ui.png-dd1637412b6afacf5cb46befcb6f92c1.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://misc/battle/heart_ui.png"
-dest_files=[ "res://.import/heart_ui.png-fe80f1cb6aa2fe95d61e1a704d6176d8.stex" ]
+source_file="res://Misc/Battle/heart_ui.png"
+dest_files=[ "res://.import/heart_ui.png-dd1637412b6afacf5cb46befcb6f92c1.stex" ]
 
 [params]
 
@@ -28,6 +28,7 @@ process/fix_alpha_border=true
 process/premult_alpha=false
 process/HDR_as_SRGB=false
 process/invert_color=false
+process/normal_map_invert_y=false
 stream=false
 size_limit=0
 detect_3d=false

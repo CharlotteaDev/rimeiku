@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/adv_pre.png-5bddc7f7ca09355c27ed0fbc18617ecc.stex"
+path="res://.import/adv_pre.png-3b2dac30982fd00a0fbc4bd47b210fa9.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://misc/title/adv_pre.png"
-dest_files=[ "res://.import/adv_pre.png-5bddc7f7ca09355c27ed0fbc18617ecc.stex" ]
+source_file="res://Misc/Title/adv_pre.png"
+dest_files=[ "res://.import/adv_pre.png-3b2dac30982fd00a0fbc4bd47b210fa9.stex" ]
 
 [params]
 
@@ -28,6 +28,7 @@ process/fix_alpha_border=true
 process/premult_alpha=false
 process/HDR_as_SRGB=false
 process/invert_color=false
+process/normal_map_invert_y=false
 stream=false
 size_limit=0
 detect_3d=true

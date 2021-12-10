@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/hammer_text.png-a0b34b6662eb428fe97cea4782d2c01d.stex"
+path="res://.import/hammer_text.png-2f452c8d3c686a7998250d9fe0a4a257.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://misc/battle/hammer_text.png"
-dest_files=[ "res://.import/hammer_text.png-a0b34b6662eb428fe97cea4782d2c01d.stex" ]
+source_file="res://Misc/Battle/hammer_text.png"
+dest_files=[ "res://.import/hammer_text.png-2f452c8d3c686a7998250d9fe0a4a257.stex" ]
 
 [params]
 
@@ -28,6 +28,7 @@ process/fix_alpha_border=true
 process/premult_alpha=false
 process/HDR_as_SRGB=false
 process/invert_color=false
+process/normal_map_invert_y=false
 stream=false
 size_limit=0
 detect_3d=false

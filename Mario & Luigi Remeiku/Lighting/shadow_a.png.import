@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/shadow_a.png-c37f6e8145dbc5d0944e24ef9df5ef22.stex"
+path="res://.import/shadow_a.png-208691781e1c0456925d34d78569c919.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://lighting/shadow_a.png"
-dest_files=[ "res://.import/shadow_a.png-c37f6e8145dbc5d0944e24ef9df5ef22.stex" ]
+source_file="res://Lighting/shadow_a.png"
+dest_files=[ "res://.import/shadow_a.png-208691781e1c0456925d34d78569c919.stex" ]
 
 [params]
 
@@ -28,6 +28,7 @@ process/fix_alpha_border=true
 process/premult_alpha=false
 process/HDR_as_SRGB=false
 process/invert_color=false
+process/normal_map_invert_y=false
 stream=false
 size_limit=0
 detect_3d=false
