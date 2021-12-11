@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/bat_pre.png-12575760f3e6670565f3560ae22de2e7.stex"
+path="res://.import/bat_pre.png-4ed838ff2df45afc0fd079db75aba451.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Misc/Title/bat_pre.png"
-dest_files=[ "res://.import/bat_pre.png-12575760f3e6670565f3560ae22de2e7.stex" ]
+source_file="res://misc/title/bat_pre.png"
+dest_files=[ "res://.import/bat_pre.png-4ed838ff2df45afc0fd079db75aba451.stex" ]
 
 [params]
 

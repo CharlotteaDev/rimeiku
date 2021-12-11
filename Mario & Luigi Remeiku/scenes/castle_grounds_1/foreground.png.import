@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/foreground.png-0ebcf9c013b2cb44d936c8d96a3d8bf9.stex"
+path="res://.import/foreground.png-067031bea98bfc9aeb3278b31b0dcc18.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Scenes/castle_grounds_1/foreground.png"
-dest_files=[ "res://.import/foreground.png-0ebcf9c013b2cb44d936c8d96a3d8bf9.stex" ]
+source_file="res://scenes/castle_grounds_1/foreground.png"
+dest_files=[ "res://.import/foreground.png-067031bea98bfc9aeb3278b31b0dcc18.stex" ]
 
 [params]
 

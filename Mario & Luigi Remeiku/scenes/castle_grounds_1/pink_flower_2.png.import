@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/pink_flower_2.png-518c6d9cad4facf54e4da85bac51573b.stex"
+path="res://.import/pink_flower_2.png-32eed5836fade3f1338aef9df96ea8a6.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Scenes/castle_grounds_1/pink_flower_2.png"
-dest_files=[ "res://.import/pink_flower_2.png-518c6d9cad4facf54e4da85bac51573b.stex" ]
+source_file="res://scenes/castle_grounds_1/pink_flower_2.png"
+dest_files=[ "res://.import/pink_flower_2.png-32eed5836fade3f1338aef9df96ea8a6.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/yellow_flower_2.png-b016a1b89b337ee8e15b39c3892deb87.stex"
+path="res://.import/yellow_flower_2.png-f96dbac67fb5e6cc6136ea7bedc171d3.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Scenes/castle_grounds_1/yellow_flower_2.png"
-dest_files=[ "res://.import/yellow_flower_2.png-b016a1b89b337ee8e15b39c3892deb87.stex" ]
+source_file="res://scenes/castle_grounds_1/yellow_flower_2.png"
+dest_files=[ "res://.import/yellow_flower_2.png-f96dbac67fb5e6cc6136ea7bedc171d3.stex" ]
 
 [params]
 

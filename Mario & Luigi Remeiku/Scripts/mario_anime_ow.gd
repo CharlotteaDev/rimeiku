@@ -11,10 +11,12 @@ onready var collision_mario = get_node("CollisionShape2D")
 onready var sprite : AnimatedSprite = $Mario
 # debug variables
 var dragging = GlobalSingleton.is_drag
-var drag_start_timer = 16.0/60.0
+var drag_start_timer = 8.0/60.0
+onready var particles_drag = $ParticlesDrag
 
 func _ready():
 
+	particles_drag.emitting = false
 	sprite.playing = false
 	sprite.speed_scale = 3
 	dragging = false
@@ -99,17 +101,19 @@ func get_input():
 	direction = direction.normalized() * speed
 
 func _input(event):
-	if event is InputEventMouseButton: # DEBUG CODE (Disabled on inactive debug)
-		if event.button_index == BUTTON_LEFT and not event.pressed: # DEBUG CODE (Disabled on inactive debug)
+	if event is InputEventMouseButton && GlobalSingleton.debug_active == true: # DEBUG CODE (Disabled on inactive debug)
+		if event.button_index == BUTTON_LEFT && not event.pressed: # DEBUG CODE (Disabled on inactive debug)
 			dragging = false # DEBUG CODE (Disabled on inactive debug)
 
 
 func _physics_process(_delta):
 	get_input()
 	if dragging == false: # DEBUG CODE (Ignore for regular code)
+		particles_drag.emitting = false # DEBUG CODE (Disabled on inactive debug)
 		collision_mario.disabled = false # DEBUG CODE (Disabled on inactive debug)
 		direction = move_and_slide(direction)
 	else: # DEBUG CODE (Disabled on inactive debug)
+		particles_drag.emitting = true # DEBUG CODE (Disabled on inactive debug)
 		collision_mario.disabled = true # DEBUG CODE (Disabled on inactive debug)
 
 	if dragging: # DEBUG CODE (Disabled on inactive debug)
@@ -123,7 +127,7 @@ func _process(_delta):
 		movement_disabled = false # DEBUG CODE (Disabled on inactive debug)
 
 func _on_Area2D_input_event(viewport, event, shape_idx): # DEBUG CODE (Disabled on inactive debug)
-	if Input.is_action_just_pressed("mouse"): # DEBUG CODE (Disabled on inactive debug)
+	if Input.is_action_just_pressed("mouse") && GlobalSingleton.debug_active == true: # DEBUG CODE (Disabled on inactive debug)
 		dragging = true # DEBUG CODE (Disabled on inactive debug)
 		if dragging == true: # DEBUG CODE (Disabled on inactive debug)
 			movement_disabled = true # DEBUG CODE (Disabled on inactive debug)
@@ -132,5 +136,3 @@ func _on_Area2D_input_event(viewport, event, shape_idx): # DEBUG CODE (Disabled 
 			sprite.animation = "drag_start" # DEBUG CODE (Disabled on inactive debug)
 			yield(get_tree().create_timer(drag_start_timer), "timeout") # DEBUG CODE (Disabled on inactive debug)
 			sprite.animation = "drag" # DEBUG CODE (Disabled on inactive debug)
-			# DEV NOTE, i scrapped flipping the animation based on the direction of Mario
-			# because i don't know how to fix it for now lol

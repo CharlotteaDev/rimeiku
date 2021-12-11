@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/ui_mario.png-2237011ac6361b21b65df7177ebd75ad.stex"
+path="res://.import/ui_mario.png-06888344bac49eb22d53b49a6dda43d4.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Misc/Battle/ui_mario.png"
-dest_files=[ "res://.import/ui_mario.png-2237011ac6361b21b65df7177ebd75ad.stex" ]
+source_file="res://misc/battle/ui_mario.png"
+dest_files=[ "res://.import/ui_mario.png-06888344bac49eb22d53b49a6dda43d4.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/num_k.png-675c525e81b1f50cba6f42f9084eb39c.stex"
+path="res://.import/num_k.png-64cae200a19444f6105feb9ec6314af2.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Misc/Battle/num_k.png"
-dest_files=[ "res://.import/num_k.png-675c525e81b1f50cba6f42f9084eb39c.stex" ]
+source_file="res://misc/battle/num_k.png"
+dest_files=[ "res://.import/num_k.png-64cae200a19444f6105feb9ec6314af2.stex" ]
 
 [params]
 
