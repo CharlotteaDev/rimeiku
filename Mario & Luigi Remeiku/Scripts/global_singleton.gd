@@ -7,9 +7,9 @@ onready var disabled_other_b = false
 
 # DEBUG VARIABLES
 onready var debug_active = false
-onready var is_drag = false
+onready var is_dragging = false
 
 # MISC
 func _process(delta):
 	if Input.is_action_just_released("debug toggle"):
-		GlobalSingleton.debug_active = !GlobalSingleton.debug_active
+		debug_active = !debug_active
