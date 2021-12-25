@@ -153,12 +153,12 @@ __meta__ = {
 }
 
 [node name="BackdropAlt" type="Sprite" parent="ColorRect"]
+visible = false
 z_index = -1
 texture = ExtResource( 14 )
 centered = false
 
 [node name="Backdrop" type="Sprite" parent="ColorRect"]
-visible = false
 show_behind_parent = true
 light_mask = 0
 texture = ExtResource( 11 )
@@ -230,6 +230,7 @@ show_behind_parent = true
 position = Vector2( 904.317, 572.417 )
 scale = Vector2( 1.56123, 1.56123 )
 frames = SubResource( 14 )
+frame = 1
 speed_scale = 0.2
 playing = true
 centered = false

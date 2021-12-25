@@ -1,13 +1,14 @@
 extends KinematicBody2D
 
+# misc variables
 var direction = Vector2()
 export var speed = 300
 onready var facing_direction = "down"
 onready var state = "idle"
 onready var walk_frame = 24.0/60.0
 onready var movement_disabled = false
-# references
-onready var collision_mario = get_node("CollisionShape2D")
+# reference variables
+onready var collision_mario = $CollisionShape2D
 onready var sprite : AnimatedSprite = $Mario
 # debug variables
 var dragging = false
@@ -39,10 +40,10 @@ func get_input():
 	match direction:
 		Vector2(-1,-1):
 			if dragging == false:
-				sprite.animation = "move_left_up"
+				sprite.animation = "move_up_left"
 				sprite.frame = (int(walk_frame) % sprite.frames.get_frame_count(sprite.animation))
 				sprite.playing = false
-				facing_direction = "left_up"
+				facing_direction = "up_left"
 				sprite.speed_scale = 6
 		Vector2(-1,0):
 			if dragging == false:
@@ -73,10 +74,10 @@ func get_input():
 				sprite.speed_scale = 6
 		Vector2(1,1):
 			if dragging == false:
-				sprite.animation = "move_right_down"
+				sprite.animation = "move_down_right"
 				sprite.frame = (int(walk_frame) % sprite.frames.get_frame_count(sprite.animation))
 				sprite.playing = false
-				facing_direction = "right_down"
+				facing_direction = "down_right"
 				sprite.speed_scale = 6
 		Vector2(0,-1):
 			if dragging == false:
