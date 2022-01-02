@@ -1313,7 +1313,7 @@ extents = Vector2( 9.30993, 18.9258 )
 position = Vector2( -6, 0 )
 frames = SubResource( 308 )
 animation = "idle"
-frame = 26
+frame = 145
 speed_scale = 3.0
 playing = true
 

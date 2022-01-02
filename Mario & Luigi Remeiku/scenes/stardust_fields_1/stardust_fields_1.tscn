@@ -1,4 +1,4 @@
-[gd_scene load_steps=53 format=2]
+[gd_scene load_steps=52 format=2]
 
 [ext_resource path="res://sounds/stardust_fields.ogg" type="AudioStream" id=1]
 [ext_resource path="res://scenes/stardust_fields_1/warp_pipe.png" type="Texture" id=2]
@@ -21,7 +21,6 @@
 [ext_resource path="res://scenes/o_mario_fake.tscn" type="PackedScene" id=19]
 [ext_resource path="res://scripts/o_mario_fake_play.gd" type="Script" id=20]
 [ext_resource path="res://scripts/fade_start.gd" type="Script" id=21]
-[ext_resource path="res://lighting/sf_light.png" type="Texture" id=22]
 
 [sub_resource type="RectangleShape2D" id=3]
 extents = Vector2( 34, 50 )
@@ -718,6 +717,9 @@ shape = SubResource( 16 )
 position = Vector2( 220, -122.344 )
 shape = SubResource( 18 )
 
+[node name="TileMap" type="TileMap" parent="Boundries/Boundries"]
+format = 1
+
 [node name="EventBoundries" type="StaticBody2D" parent="Boundries"]
 
 [node name="stardust_fields_2" type="Area2D" parent="Boundries/EventBoundries"]
@@ -743,10 +745,10 @@ script = ExtResource( 20 )
 z_index = 99
 
 [node name="ColorRect" type="ColorRect" parent="Fade"]
-margin_left = -457.0
-margin_top = -522.0
-margin_right = 1044.0
-margin_bottom = 558.0
+margin_left = -460.0
+margin_top = -524.0
+margin_right = 1041.0
+margin_bottom = 556.0
 color = Color( 0, 0, 0, 0 )
 script = ExtResource( 21 )
 __meta__ = {
@@ -757,12 +759,6 @@ __meta__ = {
 autoplay = "fade_in"
 anims/fade_in = SubResource( 32 )
 anims/fade_out = SubResource( 33 )
-
-[node name="Light2D" type="Light2D" parent="."]
-position = Vector2( -92, -24 )
-z_index = 5
-texture = ExtResource( 22 )
-color = Color( 1, 0, 1, 1 )
 
 [node name="SomeKindOfMap" type="Sprite" parent="."]
 scale = Vector2( 8, 8 )
