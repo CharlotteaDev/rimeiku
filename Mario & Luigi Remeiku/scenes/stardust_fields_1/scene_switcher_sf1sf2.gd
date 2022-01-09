@@ -8,7 +8,7 @@ onready var fade_animation : AnimationPlayer = $"/root/StardustFields1/Fade/Colo
 onready var area_entered = false
 
 func _on_stardust_fields_2_body_entered(body):
-	print(fade_rect)
+	print("new area entered")
 	area_entered = true
 	actor_mario.visible = false
 	fade_rect.visible = true

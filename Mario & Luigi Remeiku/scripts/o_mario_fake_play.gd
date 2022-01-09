@@ -5,9 +5,6 @@ onready var actor_mario_kine = get_node("/root/"+str(GlobalSingleton.current_are
 
 onready var sprite = $PuppetMario
 
-func _ready():
-	visible = false
-
 func _process(delta):
 	if GlobalSingleton.new_area_entered == true:
 		visible = true

@@ -58,7 +58,7 @@ func get_input():
 				sprite.frame = (int(walk_frame) % sprite.frames.get_frame_count(sprite.animation))
 				sprite.playing = false
 				facing_direction = "down_left"
-				sprite.speed_scale = 6
+				sprite.speed_scale = 8
 		Vector2(1,-1):
 			if dragging == false:
 				sprite.animation = "move_up_right"
