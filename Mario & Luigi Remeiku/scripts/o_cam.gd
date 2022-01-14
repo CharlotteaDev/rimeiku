@@ -1,10 +1,13 @@
 extends Camera2D
 
-onready var mario = get_parent()
-
-func _ready():
-	current = true
-
-func _process(_delta):
-	position.x = mario.kinemario.position.x
-	position.y = mario.kinemario.position.y
+func _process(delta):
+	if GlobalSingleton.current_area == "DebugRoom":
+		limit_left = -1184
+		limit_right = 896
+		limit_top = -712
+		limit_bottom = 856
+	if GlobalSingleton.current_area == "StardustFields1":
+		limit_left = -413
+		limit_right = 1023
+		limit_top = -429
+		limit_bottom = 415

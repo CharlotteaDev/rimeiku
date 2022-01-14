@@ -2,21 +2,22 @@ extends KinematicBody2D
 
 # misc variables
 var direction = Vector2()
+
 export var speed = 300
 onready var facing_direction = "down"
 onready var state = "idle"
 onready var walk_frame = 24.0/60.0
+
 onready var movement_disabled = false
+onready var in_free_fall = false
 # reference variables
 onready var collision_mario = $CollisionShape2D
 onready var sprite : AnimatedSprite = $Mario
 # debug variables
 var dragging = false
-var drag_start_timer = 8.0/60.0
 onready var particles_drag = $ParticlesDrag
 
 func _ready():
-
 	particles_drag.emitting = false
 	sprite.playing = false
 	sprite.speed_scale = 3
@@ -109,6 +110,7 @@ func _input(event):
 
 func _physics_process(_delta):
 	get_input()
+
 	if dragging == false: # DEBUG CODE (Ignore for regular code)
 		particles_drag.emitting = false # DEBUG CODE (Disabled on inactive debug)
 		collision_mario.disabled = false # DEBUG CODE (Disabled on inactive debug)
@@ -126,8 +128,23 @@ func _physics_process(_delta):
 func _process(_delta):
 	walk_frame += 24.0/60.0
 
+	if in_free_fall == true:
+		if sprite.animation != ("fall_"+str(facing_direction)):
+			sprite.playing = true
+			sprite.speed_scale = 3
+			sprite.animation = ("fall_"+str(facing_direction))
+
+	if GlobalSingleton.height_map_layer == "g1":
+		sprite.offset.y = 0
+	if GlobalSingleton.height_map_layer == "g2":
+		sprite.offset.y = -10
+
 	if dragging == false: # DEBUG CODE (Disabled on inactive debug)
 		movement_disabled = false # DEBUG CODE (Disabled on inactive debug)
+	if GlobalSingleton.debug_active == true:
+		if Input.is_action_just_pressed("feature test key (changes based on current test)"):
+			# CHANGE CODE BASED ON FEATURE BEING TESTED
+			in_free_fall = !in_free_fall
 
 func _on_Area2D_input_event(viewport, event, shape_idx): # DEBUG CODE (Disabled on inactive debug)
 	if Input.is_action_just_pressed("mouse") && GlobalSingleton.debug_active == true: # DEBUG CODE (Disabled on inactive debug)
@@ -136,6 +153,4 @@ func _on_Area2D_input_event(viewport, event, shape_idx): # DEBUG CODE (Disabled 
 			movement_disabled = true # DEBUG CODE (Disabled on inactive debug)
 			sprite.speed_scale = 3 # DEBUG CODE (Disabled on inactive debug)
 			sprite.playing = true # DEBUG CODE (Disabled on inactive debug)
-			sprite.animation = "drag_start" # DEBUG CODE (Disabled on inactive debug)
-			yield(get_tree().create_timer(drag_start_timer), "timeout") # DEBUG CODE (Disabled on inactive debug)
 			sprite.animation = "drag" # DEBUG CODE (Disabled on inactive debug)

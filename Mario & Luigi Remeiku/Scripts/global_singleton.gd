@@ -4,6 +4,7 @@ extends Node2D
 onready var current_area = "DebugRoom"
 onready var new_area_entered = false
 onready var area_exit_direction = "down"
+onready var height_map_layer = "undefined"
 
 # DEBUG VARIABLES
 onready var debug_active = false
