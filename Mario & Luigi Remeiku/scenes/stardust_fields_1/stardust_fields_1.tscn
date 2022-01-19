@@ -386,11 +386,11 @@ tracks/0/keys = {
 "values": [ Color( 0, 0, 0, 0 ), Color( 0, 0, 0, 1 ) ]
 }
 
-[sub_resource type="Gradient" id=36]
+[sub_resource type="Gradient" id=40]
 colors = PoolColorArray( 0, 0, 0.321569, 1, 0, 0.388235, 0.635294, 1 )
 
 [sub_resource type="GradientTexture" id=37]
-gradient = SubResource( 36 )
+gradient = SubResource( 40 )
 
 [sub_resource type="TileSet" id=39]
 0/name = "layer_0.png 0"
@@ -896,6 +896,7 @@ anims/fade_in = SubResource( 32 )
 anims/fade_out = SubResource( 33 )
 
 [node name="FloorMap" type="Sprite" parent="."]
+visible = false
 scale = Vector2( 8, 8 )
 texture = ExtResource( 16 )
 normal_map = ExtResource( 15 )

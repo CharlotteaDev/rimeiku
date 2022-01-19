@@ -67,11 +67,11 @@ texture={
 
 [input]
 
-ui_select={
+ui_accept={
 "deadzone": 0.5,
 "events": [  ]
 }
-ui_accept={
+ui_select={
 "deadzone": 0.5,
 "events": [  ]
 }
