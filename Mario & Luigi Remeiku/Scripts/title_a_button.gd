@@ -29,7 +29,7 @@ func _on_Button2_pressed():
 func _process(_delta):
 	if  button_pressed == true:
 		bg_theme.volume_db = volume
-		volume -= 25.0/100.0
+		volume -= 75.0/100.0
 
 	if !pressable_a:
 		set_disabled(true)

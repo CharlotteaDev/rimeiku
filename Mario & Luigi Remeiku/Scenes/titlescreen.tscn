@@ -1,19 +1,19 @@
-[gd_scene load_steps=34 format=2]
+[gd_scene load_steps=32 format=2]
 
-[ext_resource path="res://Misc/title/bat_sta.png" type="Texture" id=1]
+[ext_resource path="res://assets/title/bat_sta.png" type="Texture" id=1]
 [ext_resource path="res://sounds/sfx/button_pre.wav" type="AudioStream" id=2]
 [ext_resource path="res://Misc/SUPERMARIO.TTF" type="DynamicFontData" id=3]
 [ext_resource path="res://Sounds/title.ogg" type="AudioStream" id=4]
-[ext_resource path="res://Misc/title/bat_pre.png" type="Texture" id=5]
-[ext_resource path="res://Misc/logo.png" type="Texture" id=6]
-[ext_resource path="res://Misc/title/adv_sta.png" type="Texture" id=7]
-[ext_resource path="res://Misc/title/adv_pre.png" type="Texture" id=8]
+[ext_resource path="res://assets/title/bat_pre.png" type="Texture" id=5]
+[ext_resource path="res://assets/logo.png" type="Texture" id=6]
+[ext_resource path="res://assets/title/adv_sta.png" type="Texture" id=7]
+[ext_resource path="res://assets/title/adv_pre.png" type="Texture" id=8]
 [ext_resource path="res://scripts/title_a_button.gd" type="Script" id=9]
 [ext_resource path="res://scripts/title_b_button.gd" type="Script" id=10]
-[ext_resource path="res://Misc/title/title_screen_bg.png" type="Texture" id=11]
-[ext_resource path="res://Misc/title/ui_demo.png" type="Texture" id=12]
+[ext_resource path="res://assets/title/title_screen_bg.png" type="Texture" id=11]
+[ext_resource path="res://assets/title/ui_demo.png" type="Texture" id=12]
 [ext_resource path="res://scripts/debug_title_controller.gd" type="Script" id=13]
-[ext_resource path="res://Misc/Title/title_screen_alt_bg.png" type="Texture" id=14]
+[ext_resource path="res://assets/title/title_screen_alt_bg.png" type="Texture" id=14]
 [ext_resource path="res://sounds/title_alt.ogg" type="AudioStream" id=15]
 
 [sub_resource type="DynamicFont" id=5]
@@ -42,24 +42,6 @@ region_rect = Rect2( 0, 0, 487, 149 )
 texture = ExtResource( 1 )
 region_rect = Rect2( 0, 0, 487, 149 )
 
-[sub_resource type="Animation" id=6]
-resource_name = "fade_out"
-length = 1.5
-tracks/0/type = "audio"
-tracks/0/path = NodePath("../Theme")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"clips": [ {
-"end_offset": 5.0,
-"start_offset": 0.0,
-"stream": null
-} ],
-"times": PoolRealArray( 1.5 )
-}
-
 [sub_resource type="StyleBoxTexture" id=7]
 texture = ExtResource( 7 )
 region_rect = Rect2( 0, 0, 487, 149 )
@@ -78,24 +60,6 @@ region_rect = Rect2( 0, 0, 487, 149 )
 [sub_resource type="StyleBoxTexture" id=10]
 texture = ExtResource( 7 )
 region_rect = Rect2( 0, 0, 487, 149 )
-
-[sub_resource type="Animation" id=11]
-resource_name = "fade_out"
-length = 1.5
-tracks/0/type = "audio"
-tracks/0/path = NodePath("../Theme")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"clips": [ {
-"end_offset": 5.0,
-"start_offset": 0.0,
-"stream": null
-} ],
-"times": PoolRealArray( 1.5 )
-}
 
 [sub_resource type="AtlasTexture" id=12]
 atlas = ExtResource( 12 )
@@ -201,9 +165,6 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="ColorRect/Button"]
-anims/fade_out = SubResource( 6 )
-
 [node name="Button2" type="Button" parent="ColorRect"]
 show_behind_parent = true
 margin_left = 322.803
@@ -221,9 +182,6 @@ script = ExtResource( 9 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="ColorRect/Button2"]
-anims/fade_out = SubResource( 11 )
 
 [node name="AttackDemo" type="AnimatedSprite" parent="ColorRect"]
 show_behind_parent = true
