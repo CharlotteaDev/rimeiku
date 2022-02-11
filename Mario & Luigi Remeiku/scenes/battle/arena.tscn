@@ -12,7 +12,7 @@
 [node name="Arena" type="Node2D"]
 
 [node name="CommandBlocks" parent="." instance=ExtResource( 6 )]
-position = Vector2( 369, 221 )
+position = Vector2( 295, 221 )
 
 [node name="Mario" parent="." instance=ExtResource( 2 )]
 position = Vector2( 257.05, 320 )
@@ -29,7 +29,6 @@ position = Vector2( 747.426, 365.316 )
 position = Vector2( 587.765, -58.4097 )
 scale = Vector2( 10000, 10000 )
 stream = ExtResource( 5 )
-autoplay = true
 max_distance = 1e+08
 
 [node name="LuigiUI" parent="." instance=ExtResource( 7 )]
@@ -43,3 +42,6 @@ show_behind_parent = true
 position = Vector2( 483.041, -2 )
 scale = Vector2( 2, 2 )
 texture = ExtResource( 4 )
+__meta__ = {
+"_edit_lock_": true
+}
