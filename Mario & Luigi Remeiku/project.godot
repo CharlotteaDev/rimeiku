@@ -16,9 +16,8 @@ _global_script_class_icons={
 
 config/name="Mario & Luigi Rimeiku Github"
 run/main_scene="res://scenes/titlescreen.tscn"
-boot_splash/image="res://Misc/logo.png"
-boot_splash/fullsize=false
-boot_splash/bg_color=Color( 0.0745098, 0, 0.309804, 1 )
+boot_splash/image="res://assets/project_viewport.png"
+boot_splash/bg_color=Color( 0, 0, 0, 1 )
 config/icon="res://Misc/icon.png"
 
 [audio]
