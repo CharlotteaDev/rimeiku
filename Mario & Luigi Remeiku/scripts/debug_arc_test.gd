@@ -1,7 +1,11 @@
 extends Sprite
 
 onready var enemy = $"../Sprite2"
+onready var width = 2.0
 
 func _ready():
 	print(enemy)
-#	void draw_arc ( Vector2 center, float radius, float start_angle, float end_angle, int point_count, Color color, float width=1.0, bool antialiased=false )
+
+func _draw():
+	draw_arc(Vector2(100,0), float(10), float(3), float(7), 1000, Color(1,1,1), width, true)
+		   # Center          Radius     start_rad end_rad   width                      AA?

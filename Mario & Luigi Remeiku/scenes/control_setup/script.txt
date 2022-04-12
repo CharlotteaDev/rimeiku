@@ -1,0 +1,62 @@
+General Starshade:
+*walk on
+Attention! General Starshade at your service!
+Proceeding with control setup!
+*walk down
+First, let's set the binding for jumping!
+Confirmation! Master Mario will be jumping using [X], correct?
+Excellent!
+Proceeding with control setup!
+*walk off
+
+Sergeant Starshade:
+*walk on
+Attention! Sergeant Starshade at your service!
+Proceeding with control setup!
+*walk down
+First, let's set the binding for jumping!
+Confirmation! Master Luigi will be jumping using [X], correct?
+Bravo!
+*move aside
+
+*GS moves on screen
+Now, let's set the binding for traversing! (SS)
+Confirmation! Master Mario and Master Luigi will be moving using [X], correct? (GS)
+Marvelous! (SS)
+Next up, please choose how you'd like to switch actions! (SS)
+Confirmation! Master Mario and Master Luigi will be switching using [X], correct? (GS)
+Great! (both)
+
+Proceeding with advanced setup! (SS)
+Move OUT!!! (GS)
+*walk off
+
+
+E. Gadd:
+*walk on
+Greetings youngster!
+I shall be aiding you in setting up some advanced settings.
+Using my latest invention of course!
+*walk down
+See that big screen up there? Yup, that's mine!
+You've seen it before correct?
+Anyhoo, let's start by setting up your graphics quality.
+Select whatever option you prefer!
+
+*textbox with options:
+Native (A)
+Native upscaled (B)
+Upscale filtered (C)
+
+Outstanding choice, young lad!
+These changes will be applied as soon as we finish here.
+
+Now, for my last mention.
+If you experience bugs or inconveniences at any point, do not be afraid to contact Charlottea#8820 on Discord!
+
+That'll be all for today, farewell feller!
+*walk off
+*textbox follows in small text
+Now where did I leave my coffee...
+
+*fade out to titlescreen

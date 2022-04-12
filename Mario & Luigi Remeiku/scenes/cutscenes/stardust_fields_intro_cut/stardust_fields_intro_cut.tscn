@@ -690,6 +690,7 @@ rotation = 0.349066
 scale = Vector2( 2, 2 )
 frames = SubResource( 63 )
 animation = "falling"
+frame = 2
 speed_scale = 3.0
 playing = true
 
@@ -716,7 +717,7 @@ rotation = 0.349066
 scale = Vector2( 2, 2 )
 frames = SubResource( 75 )
 animation = "falling"
-frame = 1
+frame = 3
 speed_scale = 3.0
 playing = true
 

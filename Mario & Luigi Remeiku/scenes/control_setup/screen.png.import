@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/b_hiko_bg.png-108d4627b586f096a8f88ad8bffbf199.stex"
+path="res://.import/screen.png-b64b5c218b98cd6d034340b66f4ba8b8.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://bgs/b_hiko_bg.png"
-dest_files=[ "res://.import/b_hiko_bg.png-108d4627b586f096a8f88ad8bffbf199.stex" ]
+source_file="res://scenes/control_setup/screen.png"
+dest_files=[ "res://.import/screen.png-b64b5c218b98cd6d034340b66f4ba8b8.stex" ]
 
 [params]
 
@@ -28,6 +28,7 @@ process/fix_alpha_border=true
 process/premult_alpha=false
 process/HDR_as_SRGB=false
 process/invert_color=false
+process/normal_map_invert_y=false
 stream=false
 size_limit=0
 detect_3d=false
