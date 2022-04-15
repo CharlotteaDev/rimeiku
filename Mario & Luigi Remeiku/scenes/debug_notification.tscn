@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=2]
+[gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://assets/debug/debug_notif_bright.png" type="Texture" id=1]
 [ext_resource path="res://assets/debug/debug_notif_dark.png" type="Texture" id=2]
@@ -9,6 +9,7 @@
 [ext_resource path="res://scripts/debug_speedscale.gd" type="Script" id=7]
 [ext_resource path="res://scripts/debug_direction.gd" type="Script" id=8]
 [ext_resource path="res://scripts/debug_layer.gd" type="Script" id=9]
+[ext_resource path="res://assets/default_font.ttf" type="DynamicFontData" id=10]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -22,59 +23,41 @@ animations = [ {
 resource_name = "fade"
 length = 0.3
 
-[sub_resource type="DynamicFontData" id=2]
-font_path = "res://misc/default_font.ttf"
-
-[sub_resource type="DynamicFont" id=3]
+[sub_resource type="DynamicFont" id=15]
 size = 21
 outline_size = 3
 outline_color = Color( 0, 0, 0, 1 )
-font_data = SubResource( 2 )
-
-[sub_resource type="DynamicFontData" id=5]
-font_path = "res://misc/default_font.ttf"
+font_data = ExtResource( 10 )
 
 [sub_resource type="DynamicFont" id=6]
 size = 21
 outline_size = 3
 outline_color = Color( 0, 0, 0, 1 )
-font_data = SubResource( 5 )
-
-[sub_resource type="DynamicFontData" id=7]
-font_path = "res://misc/default_font.ttf"
+font_data = ExtResource( 10 )
 
 [sub_resource type="DynamicFont" id=8]
 size = 21
 outline_size = 3
 outline_color = Color( 0, 0, 0, 1 )
-font_data = SubResource( 7 )
-
-[sub_resource type="DynamicFontData" id=9]
-font_path = "res://misc/default_font.ttf"
+font_data = ExtResource( 10 )
 
 [sub_resource type="DynamicFont" id=10]
 size = 21
 outline_size = 3
 outline_color = Color( 0, 0, 0, 1 )
-font_data = SubResource( 9 )
-
-[sub_resource type="DynamicFontData" id=11]
-font_path = "res://misc/default_font.ttf"
+font_data = ExtResource( 10 )
 
 [sub_resource type="DynamicFont" id=12]
 size = 21
 outline_size = 3
 outline_color = Color( 0, 0, 0, 1 )
-font_data = SubResource( 11 )
-
-[sub_resource type="DynamicFontData" id=13]
-font_path = "res://misc/default_font.ttf"
+font_data = ExtResource( 10 )
 
 [sub_resource type="DynamicFont" id=14]
 size = 21
 outline_size = 3
 outline_color = Color( 0, 0, 0, 1 )
-font_data = SubResource( 13 )
+font_data = ExtResource( 10 )
 
 [node name="DebugNotif" type="Node2D"]
 script = ExtResource( 3 )
@@ -98,12 +81,9 @@ grow_horizontal = 0
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 custom_constants/shadow_offset_x = 0
 custom_constants/shadow_offset_y = 1
-custom_fonts/font = SubResource( 3 )
+custom_fonts/font = SubResource( 15 )
 text = "60FPS"
 script = ExtResource( 4 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="AreaID" type="Label" parent="."]
 margin_left = 88.0
@@ -117,9 +97,6 @@ custom_constants/shadow_offset_y = 1
 custom_fonts/font = SubResource( 6 )
 text = "AreaID"
 script = ExtResource( 5 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="MoveState" type="Label" parent="."]
 margin_left = 109.0

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/fg_fog.png-275dde65108b42963bce791a02f1528d.stex"
+path="res://.import/shards_light_alt.png-c170576694e5e4503f1c1e78d9fe4d40.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/cutscenes/stardust_fields_intro_cut/fg_fog.png"
-dest_files=[ "res://.import/fg_fog.png-275dde65108b42963bce791a02f1528d.stex" ]
+source_file="res://scenes/!cutscenes/stardust_fields_intro_cut/shards_light_alt.png"
+dest_files=[ "res://.import/shards_light_alt.png-c170576694e5e4503f1c1e78d9fe4d40.stex" ]
 
 [params]
 

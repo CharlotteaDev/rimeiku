@@ -2,14 +2,18 @@ extends KinematicBody2D
 
 # misc variables
 var direction = Vector2()
-
+export (int) var shadow_offset
+export (int) var body_offset
+export (int) var gravity_rate
 export var speed = 300
-onready var facing_direction = "down"
-onready var state = "idle"
-onready var walk_frame = 24.0/60.0
-
-onready var movement_disabled = false
-onready var in_free_fall = false
+var facing_direction = "down"
+var state = "idle"
+var walk_frame = 24.0/60.0
+var z = 0
+var z_floor = 0
+var gravity = 0
+var movement_disabled = false
+var jumping = false
 # reference variables
 onready var collision_mario = $CollisionShape2D
 onready var sprite : AnimatedSprite = $Mario
@@ -126,13 +130,14 @@ func _physics_process(_delta):
 		global_position = lerp(global_position, get_global_mouse_position(), 5 * _delta) # DEBUG CODE (Disabled on inactive debug)
 
 func _process(_delta):
+	_handle_z_motion()
 	walk_frame += 24.0/60.0
 
-	if in_free_fall == true:
-		if sprite.animation != ("fall_"+str(facing_direction)):
-			sprite.playing = true
-			sprite.speed_scale = 3
-			sprite.animation = ("fall_"+str(facing_direction))
+#	if in_free_fall == true:
+#		if sprite.animation != ("fall_"+str(facing_direction)):
+#			sprite.playing = true
+#			sprite.speed_scale = 3
+#			sprite.animation = ("fall_"+str(facing_direction))
 
 	if GlobalSingleton.height_map_layer == "g1":
 		sprite.offset.y = 0
@@ -142,11 +147,36 @@ func _process(_delta):
 	if dragging == false: # DEBUG CODE (Disabled on inactive debug)
 		movement_disabled = false # DEBUG CODE (Disabled on inactive debug)
 	if GlobalSingleton.debug_active == true:
-		if Input.is_action_just_pressed("feature test key (changes based on current test)"):
+		if Input.is_action_just_pressed("feature test key (D)"):
 			# CHANGE CODE BASED ON FEATURE BEING TESTED
-			in_free_fall = !in_free_fall
+			jumping = !jumping
+			print(jumping)
 
-func _on_Area2D_input_event(viewport, event, shape_idx): # DEBUG CODE (Disabled on inactive debug)
+func _on_area_entered(area):
+	if not area is Platform:
+		return
+	z_floor = area.height
+
+func _handle_z_motion():
+	if jumping:
+		sprite.animation = ("jump_"+str(facing_direction))
+#		z += jump_height / 4
+		unset_collision_masks()
+	if !z_area.get_overlapping_areas().size() > 0:
+		z_floor = 0
+	if !z <= z_floor:
+		z -= gravity
+		gravity += gravity_rate
+	if z <= z_floor + 1:
+		z = z_floor
+		gravity = 0
+		jumping = false
+	if Input.is_action_just_pressed("A"):
+		if z <= z_floor:
+			jumping = true
+	if !jumping: reset_collission_masks()
+
+func _on_Area2D_input_event(_viewport, _event, _shape_idx): # DEBUG CODE (Disabled on inactive debug)
 	if Input.is_action_just_pressed("mouse") && GlobalSingleton.debug_active == true: # DEBUG CODE (Disabled on inactive debug)
 		dragging = true # DEBUG CODE (Disabled on inactive debug)
 		if dragging == true: # DEBUG CODE (Disabled on inactive debug)

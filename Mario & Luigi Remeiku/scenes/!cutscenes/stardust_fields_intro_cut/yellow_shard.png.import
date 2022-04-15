@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/shards_light.png-0ac0e13d44d2f56db8a54bec24eaa553.stex"
+path="res://.import/yellow_shard.png-8d579e2109a80db4e0f5bb0dd7e9d7c7.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/cutscenes/stardust_fields_intro_cut/shards_light.png"
-dest_files=[ "res://.import/shards_light.png-0ac0e13d44d2f56db8a54bec24eaa553.stex" ]
+source_file="res://scenes/!cutscenes/stardust_fields_intro_cut/yellow_shard.png"
+dest_files=[ "res://.import/yellow_shard.png-8d579e2109a80db4e0f5bb0dd7e9d7c7.stex" ]
 
 [params]
 

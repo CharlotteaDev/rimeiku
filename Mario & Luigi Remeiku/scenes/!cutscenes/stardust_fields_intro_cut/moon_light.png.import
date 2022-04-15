@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/moon_light.png-19b8c433e3c61ce966f545fc6de0cdf2.stex"
+path="res://.import/moon_light.png-e9b1d06734416e6a4358d4b8a096d7d5.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/cutscenes/stardust_fields_intro_cut/moon_light.png"
-dest_files=[ "res://.import/moon_light.png-19b8c433e3c61ce966f545fc6de0cdf2.stex" ]
+source_file="res://scenes/!cutscenes/stardust_fields_intro_cut/moon_light.png"
+dest_files=[ "res://.import/moon_light.png-e9b1d06734416e6a4358d4b8a096d7d5.stex" ]
 
 [params]
 
