@@ -118,7 +118,7 @@ z_index = 1
 texture = ExtResource( 3 )
 
 [node name="Mario" parent="TileMap" instance=ExtResource( 1 )]
-position = Vector2( -56.5, 136.5 )
+position = Vector2( -79, 110.5 )
 
 [node name="Main" type="Sprite" parent="."]
 position = Vector2( -144, 72 )

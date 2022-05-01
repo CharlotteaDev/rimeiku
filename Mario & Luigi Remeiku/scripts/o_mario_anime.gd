@@ -161,9 +161,9 @@ func _handle_z_motion():
 	if jumping:
 		sprite.animation = ("jump_"+str(facing_direction))
 #		z += jump_height / 4
-		unset_collision_masks()
-	if !z_area.get_overlapping_areas().size() > 0:
-		z_floor = 0
+#		unset_collision_masks()
+#	if !z_area.get_overlapping_areas().size() > 0:
+#		z_floor = 0
 	if !z <= z_floor:
 		z -= gravity
 		gravity += gravity_rate
@@ -174,7 +174,7 @@ func _handle_z_motion():
 	if Input.is_action_just_pressed("A"):
 		if z <= z_floor:
 			jumping = true
-	if !jumping: reset_collission_masks()
+#	if !jumping: reset_collission_masks()
 
 func _on_Area2D_input_event(_viewport, _event, _shape_idx): # DEBUG CODE (Disabled on inactive debug)
 	if Input.is_action_just_pressed("mouse") && GlobalSingleton.debug_active == true: # DEBUG CODE (Disabled on inactive debug)
